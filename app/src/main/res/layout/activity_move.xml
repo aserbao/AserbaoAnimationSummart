@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     android:id="@+id/frameLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,15 +7,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.aserbao.aserbaoanimationsummart.MoveActivity">
-    <Button
-        android:onClick="btn_move_start"
-        android:text="start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
     <ImageView
-        android:layout_gravity="center"
+
         android:id="@+id/move_image_view"
         android:src="@drawable/apple"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate"/>
+
+    <Button
+        android:id="@+id/alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/translate"
+        android:layout_toEndOf="@+id/translate"/>
+    <Button
+        android:id="@+id/scale"
+        android:text="scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/alpha"
+        android:layout_toEndOf="@+id/alpha"/>
+    <Button
+        android:id="@+id/rotate"
+        android:text="rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/scale"
+        android:layout_toEndOf="@+id/scale"/>
+</RelativeLayout>
