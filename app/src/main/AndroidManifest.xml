@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".SurfaceViewSummaryActivity">
         </activity>
+        <activity android:name=".PlayFishActivity">
+        </activity>
     </application>
 
 </manifest>
