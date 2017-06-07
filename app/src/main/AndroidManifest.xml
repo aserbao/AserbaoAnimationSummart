@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".MoveActivity">
         </activity>
+        <activity android:name=".SurfaceViewSummaryActivity">
+        </activity>
     </application>
 
 </manifest>

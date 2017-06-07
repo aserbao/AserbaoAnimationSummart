@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
     public void btn_onclick_move(View view) {
         startActivity(new Intent(this,MoveActivity.class));
     }
+
+    public void btn_surface_view(View view) {
+        startActivity(new Intent(this,SurfaceViewSummaryActivity.class));
+    }
 }
