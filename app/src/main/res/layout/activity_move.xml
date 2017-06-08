@@ -15,7 +15,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_toLeftOf="@+id/scale"
+        android:layout_toStartOf="@+id/scale"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"/>
+    <ImageView
+        android:id="@+id/move_image_view2"
+        android:src="@drawable/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/rotate"
+        android:layout_alignEnd="@+id/rotate"/>
 
     <Button
         android:id="@+id/translate"
@@ -47,4 +60,12 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/scale"
         android:layout_toEndOf="@+id/scale"/>
+    <Button
+        android:id="@+id/btn_custom_tween"
+        android:text="custom_tween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translate"
+        android:layout_alignRight="@+id/move_image_view"
+        android:layout_alignEnd="@+id/move_image_view"/>
 </RelativeLayout>
