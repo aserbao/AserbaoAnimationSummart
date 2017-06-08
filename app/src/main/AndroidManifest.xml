@@ -16,14 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MoveActivity" />
-        <activity android:name=".MoveScaleActivity" />
-        <activity android:name=".MoveStarScaleTranlateActivity" />
-        <activity android:name=".stereo_animation.StereoActivity" />
-        <activity android:name=".StereoSummaryActivity"></activity>
+        <activity android:name=".MoveActivity"/>
+        <activity android:name=".MoveScaleActivity"/>
+        <activity android:name=".MoveStarScaleTranlateActivity"/>
+        <activity android:name=".stereo_animation.StereoActivity"/>
+        <activity android:name=".StereoSummaryActivity"/>
         <activity android:name=".SurfaceViewSummaryActivity">
         </activity>
         <activity android:name=".PlayFishActivity">
+        </activity>
+        <activity android:name=".doubleTouchImageMoveScale.ImageMoveScaleActivity">
         </activity>
     </application>
 
