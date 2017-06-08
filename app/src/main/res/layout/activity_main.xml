@@ -20,10 +20,16 @@
             android:layout_height="wrap_content"/>
         <Button
             android:onClick="btn_onclick_move"
-            android:text="平移缩放"
+            android:text="补间动画"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="btn_surface_view"
+            android:text="SurfaceView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_weight="1"
         android:orientation="vertical"
