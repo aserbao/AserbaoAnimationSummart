@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Rotate3dAnimation">
+        <!-- 旋转类型   x轴 y轴  z轴 -->
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+           <!-- 初始角度 -->
+        <attr name="fromDeg" format="float" />
+         <!-- 目标角度 -->
+        <attr name="toDeg" format="float" />
+         <!-- 旋转点 -->
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+</resources>
