@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:rotates="http://schemas.android.com/apk/res-auto"
+     android:interpolator="@android:anim/linear_interpolator"
+     android:shareInterpolator="true">
+     <rotates:com.aserbao.aserbaoanimationsummart.stereo_animation.Rotate3dAnimation
+        rotates:rollType="y"
+        rotates:fromDeg="360"
+        rotates:toDeg="0"
+        rotates:pivotX="50%"
+         rotates:pivotY="50%"
+         android:repeatCount = "-1"
+        android:duration="400"/>
+
+</set>

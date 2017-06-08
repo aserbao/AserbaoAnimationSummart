@@ -14,7 +14,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btn_onclick_move(View view) {
-        startActivity(new Intent(this,MoveActivity.class));
+        startActivity(new Intent(this,MoveScaleActivity.class));
+    }
+
+    public void btn_stereo_animation(View view) {
+        startActivity(new Intent(this,StereoSummaryActivity.class));
     }
 
     public void btn_surface_view(View view) {
