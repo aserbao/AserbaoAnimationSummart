@@ -1977,12 +1977,13 @@ containing a value of this type.
         public static final int dot_normal=0x7f020051;
         public static final int dot_selected=0x7f020052;
         public static final int dots=0x7f020053;
-        public static final int notification_template_icon_bg=0x7f020059;
-        public static final int rounded_bg=0x7f020054;
-        public static final int selector_gift=0x7f020055;
-        public static final int shape_gift_chose=0x7f020056;
-        public static final int shape_gift_tran=0x7f020057;
-        public static final int text_bg=0x7f020058;
+        public static final int ic_bg=0x7f020054;
+        public static final int notification_template_icon_bg=0x7f02005a;
+        public static final int rounded_bg=0x7f020055;
+        public static final int selector_gift=0x7f020056;
+        public static final int shape_gift_chose=0x7f020057;
+        public static final int shape_gift_tran=0x7f020058;
+        public static final int text_bg=0x7f020059;
     }
     public static final class id {
         public static final int action0=0x7f0b0072;

@@ -148,6 +148,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_bg.jpg",
+        "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\src\\main\\res\\drawable\\ic_bg.jpg"
+    },
+    {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },

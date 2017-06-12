@@ -5,12 +5,11 @@
     android:layout_height="wrap_content"
     android:background="#F5F6F7"
     android:orientation="vertical"
-    android:visibility="visible">
+    android:visibility="gone">
 
     <include
         android:id="@+id/toolbox_layout_face"
         layout="@layout/chat_face_container" />
-
     <RelativeLayout
         android:id="@+id/giftToolBox"
         android:layout_width="match_parent"
