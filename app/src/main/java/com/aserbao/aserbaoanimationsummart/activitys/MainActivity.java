@@ -1,10 +1,14 @@
-package com.aserbao.aserbaoanimationsummart;
+package com.aserbao.aserbaoanimationsummart.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.aserbao.aserbaoanimationsummart.MoveScaleActivity;
+import com.aserbao.aserbaoanimationsummart.R;
+import com.aserbao.aserbaoanimationsummart.StereoSummaryActivity;
+import com.aserbao.aserbaoanimationsummart.SurfaceViewSummaryActivity;
 import com.aserbao.aserbaoanimationsummart.canvasAndPaint.CanvasAndPaintActivity;
 
 public class MainActivity extends AppCompatActivity {
