@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
+import com.aserbao.aserbaoanimationsummart.media.aserbaoCamera.AserbaoCameraActivity;
 import com.aserbao.aserbaoanimationsummart.media.camera.CameraActivity;
 import com.aserbao.aserbaoanimationsummart.media.camera2.Camera2Activity;
+import com.aserbao.aserbaoanimationsummart.media.record.RecordActivity;
 
 public class MediaActivity extends AppCompatActivity {
 
@@ -22,5 +24,14 @@ public class MediaActivity extends AppCompatActivity {
 
     public void btn_camera2(View view) {
         startActivity(new Intent(this, Camera2Activity.class));
+    }
+
+
+    public void btn_media_record(View view) {
+        startActivity(new Intent(this, RecordActivity.class));
+    }
+
+    public void btn_aserbao_camera(View view) {
+        startActivity(new Intent(this, AserbaoCameraActivity.class));
     }
 }

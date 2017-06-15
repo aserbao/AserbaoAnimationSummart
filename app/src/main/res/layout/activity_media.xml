@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.aserbao.aserbaoanimationsummart.media.MediaActivity">
-    <Button
-        android:id="@+id/btn_camera"
-        android:onClick="btn_camera"
-        android:text="1号照相机"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn_camera2"
-        android:onClick="btn_camera2"
-        android:text="2号照相机"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/btn_camera"
-        android:layout_toEndOf="@+id/btn_camera"/>
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_camera"
+            android:onClick="btn_camera"
+            android:text="1号照相机"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_camera2"
+            android:onClick="btn_camera2"
+            android:text="2号照相机"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_camera"
+            android:layout_toEndOf="@+id/btn_camera"/>
+        <Button
+            android:id="@+id/btn_aserbao_camera"
+            android:onClick="btn_aserbao_camera"
+            android:text="aserbao照相机"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_camera2"
+            android:layout_toEndOf="@+id/btn_camera2"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="btn_media_record"
+            android:text="录音"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

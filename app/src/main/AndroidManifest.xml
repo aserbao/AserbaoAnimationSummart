@@ -2,9 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.aserbao.aserbaoanimationsummart">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
-    <uses-feature android:name="android.hardware.Camera"/>
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true"/>
@@ -41,7 +44,17 @@
         </activity>
         <activity android:name=".media.camera.CameraActivity">
         </activity>
-        <activity android:name=".media.camera2.Camera2Activity">
+        <activity
+            android:name=".media.camera2.Camera2Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".media.camera2.AlbumAty">
+        </activity>
+        <activity android:name=".media.camera2.AlbumItemAty">
+        </activity>
+        <activity android:name=".media.record.RecordActivity">
+        </activity>
+        <activity android:name=".media.aserbaoCamera.AserbaoCameraActivity">
         </activity>
     </application>
 
