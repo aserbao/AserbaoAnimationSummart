@@ -84,12 +84,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\chat_emo_normal.png",
         "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\chat_emo_normal.png"
+    },
+    {
+        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -108,16 +108,16 @@
         "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\shape_gift_tran.xml"
     },
     {
+        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ic_bg.jpg",
+        "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\ic_bg.jpg"
+    },
+    {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ic_bg.jpg",
-        "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\ic_bg.jpg"
     },
     {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ic_clear_material.xml",
