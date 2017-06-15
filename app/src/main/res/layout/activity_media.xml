@@ -9,7 +9,16 @@
     <Button
         android:id="@+id/btn_camera"
         android:onClick="btn_camera"
-        android:text="照相机"
+        android:text="1号照相机"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_camera2"
+        android:onClick="btn_camera2"
+        android:text="2号照相机"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_camera"
+        android:layout_toEndOf="@+id/btn_camera"/>
 </RelativeLayout>

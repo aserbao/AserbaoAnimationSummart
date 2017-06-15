@@ -3,8 +3,11 @@
           package="com.aserbao.aserbaoanimationsummart">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+
     <uses-feature android:name="android.hardware.Camera"/>
-    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -13,9 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SummaryActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            >
+        <activity
+            android:name=".SummaryActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -37,6 +40,8 @@
         <activity android:name=".media.MediaActivity">
         </activity>
         <activity android:name=".media.camera.CameraActivity">
+        </activity>
+        <activity android:name=".media.camera2.Camera2Activity">
         </activity>
     </application>
 
