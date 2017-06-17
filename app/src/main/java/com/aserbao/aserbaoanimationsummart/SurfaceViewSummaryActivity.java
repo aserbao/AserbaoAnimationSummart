@@ -16,4 +16,8 @@ public class SurfaceViewSummaryActivity extends AppCompatActivity {
     public void btn_play_fish(View view) {
         startActivity(new Intent(this,PlayFishActivity.class));
     }
+
+    public void btn_GL_Surface_View(View view) {
+        startActivity(new Intent(this,GlSurfaceViewActivity.class));
+    }
 }
