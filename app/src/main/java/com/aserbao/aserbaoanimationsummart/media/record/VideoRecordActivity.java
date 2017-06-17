@@ -67,12 +67,13 @@ public class VideoRecordActivity extends AppCompatActivity {
                 mRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
                 mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
                 mRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.MPEG_4_SP);
-                mRecorder.setVideoSize(320, 240);
+                mRecorder.setVideoSize(320, 240);//每个手机的屏幕视频都不一样，需要调整
                 mRecorder.setVideoFrameRate(4);
                 mRecorder.setOutputFile(videoFile.getAbsolutePath());
                 mRecorder.setPreviewDisplay(sView.getHolder().getSurface());  // ①
                 mRecorder.prepare();
                 mRecorder.start();
+                    Toast.makeText(this, videoFile.toString(), Toast.LENGTH_SHORT).show();
                     mStart.setEnabled(false);
                     mStop.setEnabled(true);
                 isRecording = true;
