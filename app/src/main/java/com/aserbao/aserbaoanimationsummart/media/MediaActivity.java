@@ -10,6 +10,7 @@ import com.aserbao.aserbaoanimationsummart.media.aserbaoCamera.AserbaoCameraActi
 import com.aserbao.aserbaoanimationsummart.media.camera.CameraActivity;
 import com.aserbao.aserbaoanimationsummart.media.camera2.Camera2Activity;
 import com.aserbao.aserbaoanimationsummart.media.record.RecordActivity;
+import com.aserbao.aserbaoanimationsummart.media.record.VideoRecordActivity;
 
 public class MediaActivity extends AppCompatActivity {
 
@@ -33,5 +34,9 @@ public class MediaActivity extends AppCompatActivity {
 
     public void btn_aserbao_camera(View view) {
         startActivity(new Intent(this, AserbaoCameraActivity.class));
+    }
+
+    public void btn_video_record(View view) {
+        startActivity(new Intent(this, VideoRecordActivity.class));
     }
 }

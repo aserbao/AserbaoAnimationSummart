@@ -28,12 +28,21 @@
         <Button
             android:id="@+id/btn_aserbao_camera"
             android:onClick="btn_aserbao_camera"
-            android:text="aserbao照相机"
+            android:text="自做照相机"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/btn_camera2"
             android:layout_toEndOf="@+id/btn_camera2"/>
+        <Button
+            android:id="@+id/video_record"
+            android:onClick="btn_video_record"
+            android:text="自做录像机"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_aserbao_camera"
+            android:layout_toEndOf="@+id/btn_aserbao_camera"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
