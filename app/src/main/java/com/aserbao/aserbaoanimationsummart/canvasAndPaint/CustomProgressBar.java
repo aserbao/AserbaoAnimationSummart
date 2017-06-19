@@ -16,33 +16,33 @@ import com.aserbao.aserbaoanimationsummart.R;
 public class CustomProgressBar extends View
 {
 	/**
-	 * ��һȦ����ɫ
+	 * ?????????
 	 */
 	private int mFirstColor;
 	/**
-	 * �ڶ�Ȧ����ɫ
+	 * ?????????
 	 */
 	private int mSecondColor;
 	/**
-	 * Ȧ�Ŀ��
+	 * ?????
 	 */
 	private int mCircleWidth;
 	/**
-	 * ����
+	 * ????
 	 */
 	private Paint mPaint;
 	/**
-	 * ��ǰ����
+	 * ???????
 	 */
 	private int mProgress;
 
 	/**
-	 * �ٶ�
+	 * ???
 	 */
 	private int mSpeed;
 
 	/**
-	 * �Ƿ�Ӧ�ÿ�ʼ��һ��
+	 * ?????????????
 	 */
 	private boolean isNext = false;
 
@@ -56,13 +56,7 @@ public class CustomProgressBar extends View
 		this(context, null);
 	}
 
-	/**
-	 * ��Ҫ�ĳ�ʼ�������һЩ�Զ����ֵ
-	 * 
-	 * @param context
-	 * @param attrs
-	 * @param defStyle
-	 */
+
 	public CustomProgressBar(Context context, AttributeSet attrs, int defStyle)
 	{
 		super(context, attrs, defStyle);
@@ -85,13 +79,13 @@ public class CustomProgressBar extends View
 						TypedValue.COMPLEX_UNIT_PX, 20, getResources().getDisplayMetrics()));
 				break;
 			case R.styleable.CustomProgressBar_speed:
-				mSpeed = a.getInt(attr, 20);// Ĭ��20
+				mSpeed = a.getInt(attr, 20);// ???20
 				break;
 			}
 		}
 		a.recycle();
 		mPaint = new Paint();
-		// ��ͼ�߳�
+		// ??????
 		new Thread()
 		{
 			public void run()
@@ -125,24 +119,24 @@ public class CustomProgressBar extends View
 	protected void onDraw(Canvas canvas)
 	{
 
-		int centre = getWidth() / 2; // ��ȡԲ�ĵ�x����
-		int radius = centre - mCircleWidth / 2;// �뾶
-		mPaint.setStrokeWidth(mCircleWidth); // ����Բ���Ŀ��
-		mPaint.setAntiAlias(true); // �������
-		mPaint.setStyle(Paint.Style.STROKE); // ���ÿ���
-		RectF oval = new RectF(centre - radius, centre - radius, centre + radius, centre + radius); // ���ڶ����Բ������״�ʹ�С�Ľ���
+		int centre = getWidth() / 2; // ???????x????
+		int radius = centre - mCircleWidth / 2;// ??
+		mPaint.setStrokeWidth(mCircleWidth); // ???????????
+		mPaint.setAntiAlias(true); // ???????
+		mPaint.setStyle(Paint.Style.STROKE); // ???????
+		RectF oval = new RectF(centre - radius, centre - radius, centre + radius, centre + radius);
 		if (!isNext)
-		{// ��һ��ɫ��Ȧ�������ڶ���ɫ��
-			mPaint.setColor(mFirstColor); // ����Բ������ɫ
-			canvas.drawCircle(centre, centre, radius, mPaint); // ����Բ��
-			mPaint.setColor(mSecondColor); // ����Բ������ɫ
-			canvas.drawArc(oval, -90, mProgress, false, mPaint); // ���ݽ��Ȼ�Բ��
+		{// ???????????????????????
+			mPaint.setColor(mFirstColor); // ????????????
+			canvas.drawCircle(centre, centre, radius, mPaint); // ???????
+			mPaint.setColor(mSecondColor); // ????????????
+			canvas.drawArc(oval, -90, mProgress, false, mPaint);
 		} else
 		{
-			mPaint.setColor(mSecondColor); // ����Բ������ɫ
-			canvas.drawCircle(centre, centre, radius, mPaint); // ����Բ��
-			mPaint.setColor(mFirstColor); // ����Բ������ɫ
-			canvas.drawArc(oval, -90, mProgress, false, mPaint); // ���ݽ��Ȼ�Բ��
+			mPaint.setColor(mSecondColor); // ????????????
+			canvas.drawCircle(centre, centre, radius, mPaint); // ???????
+			mPaint.setColor(mFirstColor); // ????????????
+			canvas.drawArc(oval, -90, mProgress, false, mPaint); // ???????????
 		}
 
 	}
