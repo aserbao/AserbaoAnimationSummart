@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.aserbao.aserbaoanimationsummart.canvasAndPaint.CanvasAndPaintActivity;
+import com.aserbao.aserbaoanimationsummart.sendgif.SendGifActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

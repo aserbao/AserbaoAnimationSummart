@@ -1,11 +1,11 @@
 package com.linj.imageloader;
 
-import java.lang.reflect.Field;
-
 import android.graphics.BitmapFactory.Options;
 import android.util.DisplayMetrics;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
+
+import java.lang.reflect.Field;
 /**
  * http://blog.csdn.net/lmj623565791/article/details/41874561
  * @author zhy
@@ -14,7 +14,7 @@ import android.widget.ImageView;
 public class ImageSizeUtil
 {
 	/**
-	 * ¸ù¾ÝÐèÇóµÄ¿íºÍ¸ßÒÔ¼°Í¼Æ¬Êµ¼ÊµÄ¿íºÍ¸ß¼ÆËãSampleSize
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Í¸ï¿½ï¿½Ô¼ï¿½Í¼Æ¬Êµï¿½ÊµÄ¿ï¿½Í¸ß¼ï¿½ï¿½ï¿½SampleSize
 	 * 
 	 * @param options
 	 * @param width
@@ -41,7 +41,7 @@ public class ImageSizeUtil
 	}
 
 	/**
-	 * ¸ù¾ÝImageView»ñÊÊµ±µÄÑ¹ËõµÄ¿íºÍ¸ß
+	 * ï¿½ï¿½ï¿½ï¿½ImageViewï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½Ä¿ï¿½Í¸ï¿½
 	 * 
 	 * @param imageView
 	 * @return
@@ -56,14 +56,14 @@ public class ImageSizeUtil
 
 		LayoutParams lp = imageView.getLayoutParams();
 
-		int width = imageView.getWidth();// »ñÈ¡imageviewµÄÊµ¼Ê¿í¶È
+		int width = imageView.getWidth();// ï¿½ï¿½È¡imageviewï¿½ï¿½Êµï¿½Ê¿ï¿½ï¿½
 		if (width <= 0)
 		{
-			width = lp.width;// »ñÈ¡imageviewÔÚlayoutÖÐÉùÃ÷µÄ¿í¶È
+			width = lp.width;// ï¿½ï¿½È¡imageviewï¿½ï¿½layoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½
 		}
 		if (width <= 0)
 		{
-			 //width = imageView.getMaxWidth();// ¼ì²é×î´óÖµ
+			 //width = imageView.getMaxWidth();// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 			width = getImageViewFieldValue(imageView, "mMaxWidth");
 		}
 		if (width <= 0)
@@ -71,14 +71,14 @@ public class ImageSizeUtil
 			width = displayMetrics.widthPixels;
 		}
 
-		int height = imageView.getHeight();// »ñÈ¡imageviewµÄÊµ¼Ê¸ß¶È
+		int height = imageView.getHeight();// ï¿½ï¿½È¡imageviewï¿½ï¿½Êµï¿½Ê¸ß¶ï¿½
 		if (height <= 0)
 		{
-			height = lp.height;// »ñÈ¡imageviewÔÚlayoutÖÐÉùÃ÷µÄ¿í¶È
+			height = lp.height;// ï¿½ï¿½È¡imageviewï¿½ï¿½layoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½
 		}
 		if (height <= 0)
 		{
-			height = getImageViewFieldValue(imageView, "mMaxHeight");// ¼ì²é×î´óÖµ
+			height = getImageViewFieldValue(imageView, "mMaxHeight");// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 		}
 		if (height <= 0)
 		{
@@ -97,7 +97,7 @@ public class ImageSizeUtil
 	}
 	
 	/**
-	 * Í¨¹ý·´Éä»ñÈ¡imageviewµÄÄ³¸öÊôÐÔÖµ
+	 * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡imageviewï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 	 * 
 	 * @param object
 	 * @param fieldName

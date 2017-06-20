@@ -1,29 +1,21 @@
 package com.linj.video.view;
 
-import java.io.IOException;
-
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
-import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.media.MediaPlayer.OnSeekCompleteListener;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Toast;
+
+import java.io.IOException;
 
 /** 
  * @ClassName: VideoSurfaceView 
- * @Description:  ºÍMediaPlayer°ó¶¨µÄSurfaceView£¬ÓÃÒÔ²¥·ÅÊÓÆµ
+ * @Description:  ï¿½ï¿½MediaPlayerï¿½ó¶¨µï¿½SurfaceViewï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½Æµ
  * @author LinJ
- * @date 2015-1-21 ÏÂÎç2:38:53 
+ * @date 2015-1-21 ï¿½ï¿½ï¿½ï¿½2:38:53 
  *  
  */
 public class VideoPlayerView extends SurfaceView implements VideoPlayerOperation {
@@ -39,15 +31,15 @@ public class VideoPlayerView extends SurfaceView implements VideoPlayerOperation
 
 	}
 	/**  
-	 *   ³õÊ¼»¯
+	 *   ï¿½ï¿½Ê¼ï¿½ï¿½
 	 */
 	private void init() {
 		mMediaPlayer=new MediaPlayer();
-		//³õÊ¼»¯ÈÝÆ÷
+		//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		getHolder().addCallback(callback);
 	}
 	/**  
-	 *  ÉèÖÃ²¥·ÅÆ÷¼àÌýº¯Êý
+	 *  ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 *  @param listener   
 	 */
 	protected void setPalyerListener(PlayerListener listener){
@@ -56,7 +48,7 @@ public class VideoPlayerView extends SurfaceView implements VideoPlayerOperation
 		mMediaPlayer.setOnPreparedListener(listener);
 	}
 	/**  
-	 *  »ñÈ¡µ±Ç°²¥·ÅÆ÷ÊÇ·ñÔÚ²¥·Å×´Ì¬
+	 *  ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ú²ï¿½ï¿½ï¿½×´Ì¬
 	 *  @return   
 	 */
 	@Override
@@ -65,7 +57,7 @@ public class VideoPlayerView extends SurfaceView implements VideoPlayerOperation
 	}
 
 	/**  
-	 *  »ñÈ¡µ±Ç°²¥·ÅÊ±¼ä£¬µ¥Î»ºÁÃë
+	 *  ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
 	 *  @return   
 	 */
 	@Override
@@ -88,23 +80,23 @@ public class VideoPlayerView extends SurfaceView implements VideoPlayerOperation
 	}
 
 	/**  
-	 *   ÉèÖÃµ±Ç°²¥·ÅÎ»ÖÃ
+	 *   ï¿½ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 	 */
 	@Override
 	public void seekPosition(int position){
 		if(isPlaying())
 			mMediaPlayer.pause();
-		//µ±ÉèÖÃµÄÊ±¼äÖµ´óÓÚÊÓÆµ×î´ó³¤¶ÈÊ±£¬Í£Ö¹²¥·Å
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ê±ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ó³¤¶ï¿½Ê±ï¿½ï¿½Í£Ö¹ï¿½ï¿½ï¿½ï¿½
 		if(position<0||position>mMediaPlayer.getDuration()){
 			mMediaPlayer.stop();
 			return;
 		}
-		//ÉèÖÃÊ±¼ä
+		//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 		mMediaPlayer.seekTo(position);
 	}
 
 	/**  
-	 *   Í£Ö¹²¥·Å
+	 *   Í£Ö¹ï¿½ï¿½ï¿½ï¿½
 	 */
 	@Override
 	public void stopPlay() {
@@ -138,16 +130,16 @@ public class VideoPlayerView extends SurfaceView implements VideoPlayerOperation
 		if(mMediaPlayer!=null&&mMediaPlayer.isPlaying()){
 			mMediaPlayer.stop();
 		}
-		mMediaPlayer.reset(); //resetÖØÐÂÉèÖÃ²¥·ÅÆ÷ÒýÇæ
+		mMediaPlayer.reset(); //resetï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		mMediaPlayer.setDataSource(path);
 		mMediaPlayer.prepare();
 	}
 
 	/** 
 	 * @ClassName: PlayerListener 
-	 * @Description:  ¼¯ºÏ½Ó¿Ú£¬containerÊµÏÖ¸Ã½Ó¿Ú
+	 * @Description:  ï¿½ï¿½ï¿½Ï½Ó¿Ú£ï¿½containerÊµï¿½Ö¸Ã½Ó¿ï¿½
 	 * @author LinJ
-	 * @date 2015-1-23 ÏÂÎç3:09:15 
+	 * @date 2015-1-23 ï¿½ï¿½ï¿½ï¿½3:09:15 
 	 *  
 	 */
 	public interface PlayerListener extends  OnCompletionListener,
