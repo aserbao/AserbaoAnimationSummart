@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/aserbao/aserbaoanimationsummart/canvasAndPaint/CustomProgressBar.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/aserbao/aserbaoanimationsummart/media/camera2/AlbumAty.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/aserbao/aserbaoanimationsummart/media/camera2/AlbumItemAty.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/cameraLibrary/src/main/java/com/linj/album/view/AlbumGridView.java" charset="GBK" />

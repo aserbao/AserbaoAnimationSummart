@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "G:\\Android\\Test\\AserbaoLearnSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "outputFile": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 117
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\.android\\build-cache\\8a0e1193fe7cad3791114fc3116e34405b13238d\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

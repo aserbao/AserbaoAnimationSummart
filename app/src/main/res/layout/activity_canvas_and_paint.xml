@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     tools:context="com.aserbao.aserbaoanimationsummart.canvasAndPaint.CanvasAndPaintActivity">
     <Button
+        android:id="@+id/btn_draw"
         android:onClick="btn_draw_base_shape"
         android:text="画圆"
         android:layout_width="wrap_content"
@@ -19,12 +20,24 @@
         app:firstColor="#16A3FA"
         app:secondColor="#D20F02"
         app:speed="10"
-        android:layout_width="300dp"
-        android:layout_height="300dp"/>
-
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <!--<com.aserbao.aserbaoanimationsummart.canvasAndPaint.CustomCircleProgress
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/custom_progress_bar"
+        app:circleWidth="20dp"
+        app:firstColor="#16A3FA"
+        app:secondColor="#D20F02"
+        app:speed="10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>-->
     <com.aserbao.aserbaoanimationsummart.canvasAndPaint.MyView
         android:id="@+id/my_view"
         android:layout_alignParentBottom="true"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
+    <com.aserbao.aserbaoanimationsummart.canvasAndPaint.MyView
+        android:layout_below="@+id/btn_draw"
+        android:layout_width="50dp"
+        android:layout_height="80dp"/>
 </RelativeLayout>

@@ -30,7 +30,7 @@ public class SummaryActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_animation:
-                startActivity(new Intent(this,MainActivity.class));
+                startActivity(new Intent(this, com.aserbao.aserbaoanimationsummart.MainActivity.class));
                 break;
             case R.id.btn_media:
                 startActivity(new Intent(this,MediaActivity.class));
