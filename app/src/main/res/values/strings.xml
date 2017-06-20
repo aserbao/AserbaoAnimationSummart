@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AserbaoAnimationSummart</string>
     <string name="title_activity_move">MoveActivity</string>
+    <string name="title_activity_circle_view">CircleViewActivity</string>
+
+
 </resources>

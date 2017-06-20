@@ -86,9 +86,7 @@ public class MoveActivity extends AppCompatActivity {
                         metrics.ydpi / 2, 6500));
                 break;
         }
-
     }
-
     private void normalTweenAnimation() {
         Interpolator interpolator = new CycleInterpolator(0.5f);
         mAnimation.setInterpolator(interpolator);

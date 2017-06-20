@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aserbao.aserbaoanimationsummart.canvasAndPaint.CanvasAndPaintActivity">
+    <Button
+        android:onClick="btn_draw_base_shape"
+        android:text="画圆"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.aserbao.aserbaoanimationsummart.canvasAndPaint.CustomProgressBar
+        android:id="@+id/custom_progress_bar"
+        android:layout_alignParentRight="true"
+        app:circleWidth="20dp"
+        app:firstColor="#16A3FA"
+        app:secondColor="#D20F02"
+        app:speed="10"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <com.aserbao.aserbaoanimationsummart.canvasAndPaint.MyView
+        android:id="@+id/my_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+</RelativeLayout>

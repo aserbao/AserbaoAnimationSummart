@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.stereo_animation.StereoActivity;
+import com.aserbao.aserbaoanimationsummart.doubleTouchImageMoveScale.ImageMoveScaleActivity;
 
 public class StereoSummaryActivity extends AppCompatActivity {
 
@@ -17,5 +18,9 @@ public class StereoSummaryActivity extends AppCompatActivity {
 
     public void btn_simple_stereo_animation(View view) {
         startActivity(new Intent(this,StereoActivity.class));
+    }
+
+    public void btn_image_move_scale(View view) {
+        startActivity(new Intent(this,ImageMoveScaleActivity.class));
     }
 }
