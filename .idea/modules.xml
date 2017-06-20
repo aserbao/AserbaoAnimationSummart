@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AserbaoAnimationSummart.iml" filepath="$PROJECT_DIR$/AserbaoAnimationSummart.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cameraLibrary/cameraLibrary.iml" filepath="$PROJECT_DIR$/cameraLibrary/cameraLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/face-unity/face-unity.iml" filepath="$PROJECT_DIR$/face-unity/face-unity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/giftlibrary/giftlibrary.iml" filepath="$PROJECT_DIR$/giftlibrary/giftlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/giftlibrary/giftlibrary.iml" filepath="$PROJECT_DIR$/giftlibrary/giftlibrary.iml" />
     </modules>
   </component>

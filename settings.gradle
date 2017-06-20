@@ -1,1 +1,1 @@
-include ':app', ':giftlibrary'
+include ':app', ':giftlibrary', ':face-unity', ':cameraLibrary'

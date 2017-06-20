@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.aserbao.aserbaoanimationsummart">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activitys.MainActivity">
+        <activity
+            android:name=".SummaryActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -22,12 +35,38 @@
         <activity android:name=".stereo_animation.StereoActivity"/>
         <activity android:name=".StereoSummaryActivity"/>
         <activity android:name=".SurfaceViewSummaryActivity">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".MoveActivity"/>
+        <activity android:name=".MoveScaleActivity"/>
+        <activity android:name=".MoveStarScaleTranlateActivity"/>
+        <activity android:name=".stereo_animation.StereoActivity"/>
+        <activity android:name=".StereoSummaryActivity"/>
+        <activity android:name=".SurfaceViewSummaryActivity"/>
+        <activity android:name=".PlayFishActivity"/>
+        <activity
+            android:name=".sendgif.SendGifActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".media.MediaActivity">
         </activity>
         <activity android:name=".PlayFishActivity">
         </activity>
         <activity android:name=".doubleTouchImageMoveScale.ImageMoveScaleActivity">
         </activity>
         <activity android:name=".canvasAndPaint.CanvasAndPaintActivity">
+        <activity android:name=".media.camera.CameraActivity">
+        </activity>
+        <activity
+            android:name=".media.camera2.Camera2Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".media.camera2.AlbumAty">
+        </activity>
+        <activity android:name=".media.camera2.AlbumItemAty">
+        </activity>
+        <activity android:name=".media.record.RecordActivity">
+        </activity>
+        <activity android:name=".media.aserbaoCamera.AserbaoCameraActivity">
         </activity>
     </application>
 

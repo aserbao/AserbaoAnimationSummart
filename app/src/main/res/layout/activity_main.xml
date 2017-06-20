@@ -34,7 +34,11 @@
             android:text="补间动画"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
+        <Button
+            android:onClick="btn_surface_view"
+            android:text="SurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <LinearLayout
@@ -57,7 +61,12 @@
             android:onClick="btn_surface_view"
             android:text="SurfaceView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="btn_send_gif"
+            android:text="直播送礼"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 
