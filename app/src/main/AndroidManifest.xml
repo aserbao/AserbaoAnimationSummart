@@ -63,6 +63,8 @@
         </activity>
         <activity android:name=".GlSurfaceViewActivity">
         </activity>
+        <activity android:name=".listener.GestureDetectorActivity">
+        </activity>
     </application>
 
 </manifest>
