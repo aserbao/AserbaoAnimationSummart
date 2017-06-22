@@ -11,6 +11,7 @@
         android:id="@+id/toolbox_layout_face"
         layout="@layout/chat_face_container" />
     <RelativeLayout
+        android:visibility="gone"
         android:id="@+id/giftToolBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
