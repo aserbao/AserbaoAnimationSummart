@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.aserbao.aserbaoanimationsummart.listener.GestureDetectorActivity;
+import com.aserbao.aserbaoanimationsummart.activitys.TouchBaseActivity;
+import com.aserbao.aserbaoanimationsummart.activitys.UISummaryActivity;
 import com.aserbao.aserbaoanimationsummart.media.MediaActivity;
 
 import butterknife.BindView;
@@ -21,6 +22,9 @@ public class SummaryActivity extends AppCompatActivity {
     Button mBtnMedia;
     @BindView(R.id.listener)
     Button mBtnListener;
+    @BindView(R.id.base_ui)
+    Button mBaseUi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,18 +32,23 @@ public class SummaryActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_animation, R.id.btn_media,R.id.listener})
+    @OnClick({R.id.btn_animation, R.id.btn_media, R.id.listener,R.id.base_ui})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_animation:
                 startActivity(new Intent(this, com.aserbao.aserbaoanimationsummart.MainActivity.class));
                 break;
             case R.id.btn_media:
-                startActivity(new Intent(this,MediaActivity.class));
+                startActivity(new Intent(this, MediaActivity.class));
                 break;
             case R.id.listener:
-                startActivity(new Intent(this,GestureDetectorActivity.class));
+                startActivity(new Intent(this, TouchBaseActivity.class));
+                break;
+            case R.id.base_ui:
+                startActivity(new Intent(this, UISummaryActivity.class));
                 break;
         }
     }
+
+
 }

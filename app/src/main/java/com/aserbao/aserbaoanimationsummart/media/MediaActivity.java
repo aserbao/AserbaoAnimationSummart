@@ -39,4 +39,8 @@ public class MediaActivity extends AppCompatActivity {
     public void btn_video_record(View view) {
         startActivity(new Intent(this, VideoRecordActivity.class));
     }
+
+    public void btn_fu_media_record(View view) {
+
+    }
 }

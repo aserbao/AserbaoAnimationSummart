@@ -22,10 +22,18 @@
         android:layout_toEndOf="@+id/btn_animation"/>
     <Button
         android:id="@+id/listener"
-        android:text="监听事件"
+        android:text="基础概念"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/btn_media"
         android:layout_toEndOf="@+id/btn_media"/>
+    <Button
+        android:id="@+id/base_ui"
+        android:text="基础UI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/listener"
+        android:layout_toEndOf="@+id/listener"/>
 </RelativeLayout>

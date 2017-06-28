@@ -65,6 +65,14 @@
         </activity>
         <activity android:name=".listener.GestureDetectorActivity">
         </activity>
+        <activity android:name=".activitys.TouchBaseActivity">
+        </activity>
+        <activity android:name=".activitys.DispatchActivity">
+        </activity>
+        <activity android:name=".activitys.UISummaryActivity">
+        </activity>
+        <activity android:name=".activitys.EditTextActivity">
+        </activity>
     </application>
 
 </manifest>
