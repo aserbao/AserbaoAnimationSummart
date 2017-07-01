@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\release\\layout\\face_image.xml",
-        "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\src\\main\\res\\layout\\face_image.xml"
-    },
-    {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\2f059e48002370cf6abd422648341a501d151c98\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\release\\layout\\face_image.xml",
+        "source": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\src\\main\\res\\layout\\face_image.xml"
     },
     {
         "merged": "F:\\Android\\AserbaoTestSummary\\AserbaoAnimationSummart\\giftlibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
