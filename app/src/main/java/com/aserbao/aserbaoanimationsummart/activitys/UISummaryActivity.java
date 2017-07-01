@@ -18,4 +18,8 @@ public class UISummaryActivity extends AppCompatActivity {
     public void btn_edit_click(View view) {
         startActivity(new Intent(this,EditTextActivity.class));
     }
+
+    public void btn_recycler_view(View view) {
+        startActivity(new Intent(this,RecyclerViewSummary.class));
+    }
 }
