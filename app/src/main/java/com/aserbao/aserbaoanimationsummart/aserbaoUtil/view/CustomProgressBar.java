@@ -14,37 +14,24 @@ import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
 
+import java.util.Random;
+
 public class CustomProgressBar extends View
 {
-	/**
-	 * ?????????
-	 */
+
 	private int mFirstColor;
-	/**
-	 * ?????????
-	 */
+
 	private int mSecondColor;
-	/**
-	 * ?????
-	 */
+
 	private int mCircleWidth;
-	/**
-	 * ????
-	 */
+
 	private Paint mPaint;
-	/**
-	 * ???????
-	 */
+
 	private int mProgress;
 
-	/**
-	 * ???
-	 */
 	private int mSpeed;
 
-	/**
-	 * ?????????????
-	 */
+	private int[] mInts = {Color.RED,Color.GRAY,Color.BLACK,Color.YELLOW,Color.BLUE,Color.WHITE,Color.CYAN,Color.GREEN};
 	private boolean isNext = false;
 
 	public CustomProgressBar(Context context, AttributeSet attrs)
@@ -80,13 +67,13 @@ public class CustomProgressBar extends View
 						TypedValue.COMPLEX_UNIT_PX, 20, getResources().getDisplayMetrics()));
 				break;
 			case R.styleable.CustomProgressBar_speed:
-				mSpeed = a.getInt(attr, 20);// ???20
+				mSpeed = a.getInt(attr, 20);
 				break;
 			}
 		}
 		a.recycle();
 		mPaint = new Paint();
-		// ??????
+		
 		new Thread()
 		{
 			public void run()
@@ -119,29 +106,27 @@ public class CustomProgressBar extends View
 	@Override
 	protected void onDraw(Canvas canvas)
 	{
-
-		int centre = getWidth() / 2; // ???????x????
-		int radius = centre - mCircleWidth / 2;// ??
-		mPaint.setStrokeWidth(mCircleWidth); // ???????????
-		mPaint.setAntiAlias(true); // ???????
-		mPaint.setStyle(Paint.Style.STROKE); // ???????
+		Random random = new Random();
+		int i = random.nextInt(mInts.length);
+		int centre = getWidth() / 2;
+		int radius = centre - mCircleWidth / 2;
+		mPaint.setStrokeWidth(mCircleWidth);
+		mPaint.setAntiAlias(true);
+		mPaint.setStyle(Paint.Style.STROKE);
 		RectF oval = new RectF(centre - radius, centre - radius, centre + radius, centre + radius);
 		Path path = new Path();
 		path.moveTo(0,0);
 		if (!isNext)
-		{// ???????????????????????
-			/*mPaint.setColor(mFirstColor); // ????????????
-			canvas.drawCircle(centre, centre, radius, mPaint); // ???????*/
-			mPaint.setColor(mSecondColor); // ????????????
+		{
+			mPaint.setColor(mInts[i]);
 			canvas.drawArc(oval, -90, mProgress, false, mPaint);
 			path.lineTo(mProgress,0);
 			canvas.drawPath(path,mPaint);
 		} else
 		{
-			/*mPaint.setColor(mSecondColor); // ????????????
-			canvas.drawCircle(centre, centre, radius, mPaint); // ???????*/
-			mPaint.setColor(mFirstColor); // ????????????
-			canvas.drawArc(oval, -90, mProgress, false, mPaint); // ???????????
+
+			mPaint.setColor(mFirstColor);
+			canvas.drawArc(oval, -90, mProgress, false, mPaint);
 
 			path.lineTo(mProgress,0);
 			canvas.drawPath(path,mPaint);

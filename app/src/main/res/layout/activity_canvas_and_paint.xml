@@ -39,5 +39,10 @@
         app:timeFinish="12"
         app:showColor="@color/black"
         app:sleepTime="50"
-        />
+        >
+       <!-- <ImageView
+            android:src="@drawable/ic_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>-->
+    </com.aserbao.aserbaoanimationsummart.aserbaoUtil.view.RectFProgresss>
 </RelativeLayout>
