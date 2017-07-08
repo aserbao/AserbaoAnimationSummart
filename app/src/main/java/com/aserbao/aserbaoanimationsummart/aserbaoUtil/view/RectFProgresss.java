@@ -1,4 +1,4 @@
-package com.aserbao.aserbaoanimationsummart.canvasAndPaint;
+package com.aserbao.aserbaoanimationsummart.aserbaoUtil.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;

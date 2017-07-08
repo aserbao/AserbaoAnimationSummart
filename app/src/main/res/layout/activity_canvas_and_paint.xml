@@ -13,7 +13,7 @@
         android:text="画圆"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <com.aserbao.aserbaoanimationsummart.canvasAndPaint.CustomProgressBar
+    <com.aserbao.aserbaoanimationsummart.aserbaoUtil.view.CustomProgressBar
         android:id="@+id/custom_progress_bar"
         android:layout_alignParentRight="true"
         app:circleWidth="20dp"
@@ -31,7 +31,7 @@
         android:layout_below="@+id/btn_draw"
         android:layout_width="50dp"
         android:layout_height="80dp"/>
-    <com.aserbao.aserbaoanimationsummart.canvasAndPaint.RectFProgresss
+    <com.aserbao.aserbaoanimationsummart.aserbaoUtil.view.RectFProgresss
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_width="match_parent"

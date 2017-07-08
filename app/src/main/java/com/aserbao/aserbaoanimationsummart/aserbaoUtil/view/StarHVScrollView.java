@@ -1,4 +1,4 @@
-package com.aserbao.aserbaoanimationsummart.view;
+package com.aserbao.aserbaoanimationsummart.aserbaoUtil.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
