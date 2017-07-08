@@ -26,18 +26,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-/** 
-* @ClassName: AlbumAty 
-* @Description: 相册Activity
-* @author LinJ
-* @date 2015-1-6 下午5:03:48 
-*  
-*/
+
 public class AlbumAty extends Activity implements View.OnClickListener,AlbumGridView.OnCheckedChangeListener{
 	public final static String TAG="AlbumAty";
-	/**
-	 * 显示相册的View
-	 */
+
 	private AlbumGridView mAlbumView;
 
 	private String mSaveRoot;
@@ -103,13 +95,8 @@ public class AlbumAty extends Activity implements View.OnClickListener,AlbumGrid
 
 	}
 
-	/**  
-	 *  加载图片
-	 *  @param rootPath 根目录文件夹名 
-	 *  @param format 需要加载的文件格式 
-	 */
+
 	public void loadAlbum(String rootPath,String format){
-		//获取根目录下缩略图文件夹
 		String thumbFolder= FileOperateUtil.getFolderPath(this, FileOperateUtil.TYPE_THUMBNAIL, rootPath);
 		List<File> files= FileOperateUtil.listFiles(thumbFolder, format);
 		if(files!=null&&files.size()>0){
@@ -186,8 +173,8 @@ public class AlbumAty extends Activity implements View.OnClickListener,AlbumGrid
 	
 	private void showDeleteDialog() {
 		AlertDialog.Builder builder=new AlertDialog.Builder(this);
-		builder.setMessage("确定要要删除?")
-		.setPositiveButton("确认", new OnClickListener() {	
+		builder.setMessage("sure delete")
+		.setPositiveButton("sure", new OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
@@ -200,7 +187,7 @@ public class AlbumAty extends Activity implements View.OnClickListener,AlbumGrid
 				leaveEdit();
 			}
 		})
-		.setNegativeButton("取消", new OnClickListener() {			
+		.setNegativeButton("cancel", new OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub

@@ -34,6 +34,15 @@
         <attr name="circleWidth" />
         <attr name="speed" />
     </declare-styleable>
+
+    <attr name="timeFinish" />
+    <attr name="showColor"/>
+    <attr name="sleepTime"/>
+    <declare-styleable name="ARectFProgress">
+        <attr name="timeFinish" />
+        <attr name="showColor"/>
+        <attr name="sleepTime"/>
+    </declare-styleable>
     <declare-styleable name="CircleImageView">
         <attr name="border_width" format="dimension" />
         <attr name="border_color" format="color" />

@@ -25,18 +25,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/** 
- * @ClassName: AlbumItemAty 
- * @Description:相册图片大图Activity 包含图片编辑功能
- * @author LinJ
- * @date 2015-1-12 下午5:18:25 
- *  
- */
+
 public class AlbumItemAty extends Activity implements OnClickListener,OnSingleTapListener
 ,OnPlayVideoListener {
 	public final static String TAG="AlbumDetailAty";
 	private String mSaveRoot;
-	private AlbumViewPager mViewPager;//显示大图
+	private AlbumViewPager mViewPager;
 	private VideoPlayerContainer mContainer;
 	private ImageView mBackView;
 	private ImageView mCameraView;
@@ -86,20 +80,13 @@ public class AlbumItemAty extends Activity implements OnClickListener,OnSingleTa
 	}
 
 
-	/**  
-	 *  加载图片
-	 *  @param rootPath   图片根路径
-	 */
+
 	public void loadAlbum(String rootPath,String fileName){
-		//获取根目录下缩略图文件夹
 		String folder= FileOperateUtil.getFolderPath(this, FileOperateUtil.TYPE_IMAGE, rootPath);
 		String thumbnailFolder= FileOperateUtil.getFolderPath(this, FileOperateUtil.TYPE_THUMBNAIL, rootPath);
-		//获取图片文件大图
 		List<File> imageList= FileOperateUtil.listFiles(folder, ".jpg");
-		//获取视频文件缩略图
 		List<File> videoList= FileOperateUtil.listFiles(thumbnailFolder, ".jpg","video");
 		List<File> files=new ArrayList<File>();
-		//将视频文件缩略图加入图片大图列表中
 		if(videoList!=null&&videoList.size()>0){
 			files.addAll(videoList);
 		}

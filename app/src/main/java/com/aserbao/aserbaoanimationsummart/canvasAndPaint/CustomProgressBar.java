@@ -6,6 +6,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -125,18 +126,25 @@ public class CustomProgressBar extends View
 		mPaint.setAntiAlias(true); // ???????
 		mPaint.setStyle(Paint.Style.STROKE); // ???????
 		RectF oval = new RectF(centre - radius, centre - radius, centre + radius, centre + radius);
+		Path path = new Path();
+		path.moveTo(0,0);
 		if (!isNext)
 		{// ???????????????????????
-			mPaint.setColor(mFirstColor); // ????????????
-			canvas.drawCircle(centre, centre, radius, mPaint); // ???????
+			/*mPaint.setColor(mFirstColor); // ????????????
+			canvas.drawCircle(centre, centre, radius, mPaint); // ???????*/
 			mPaint.setColor(mSecondColor); // ????????????
 			canvas.drawArc(oval, -90, mProgress, false, mPaint);
+			path.lineTo(mProgress,0);
+			canvas.drawPath(path,mPaint);
 		} else
 		{
-			mPaint.setColor(mSecondColor); // ????????????
-			canvas.drawCircle(centre, centre, radius, mPaint); // ???????
+			/*mPaint.setColor(mSecondColor); // ????????????
+			canvas.drawCircle(centre, centre, radius, mPaint); // ???????*/
 			mPaint.setColor(mFirstColor); // ????????????
 			canvas.drawArc(oval, -90, mProgress, false, mPaint); // ???????????
+
+			path.lineTo(mProgress,0);
+			canvas.drawPath(path,mPaint);
 		}
 
 	}

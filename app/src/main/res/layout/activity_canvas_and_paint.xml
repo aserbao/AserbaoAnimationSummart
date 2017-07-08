@@ -22,15 +22,6 @@
         app:speed="10"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
-    <!--<com.aserbao.aserbaoanimationsummart.canvasAndPaint.CustomCircleProgress
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/custom_progress_bar"
-        app:circleWidth="20dp"
-        app:firstColor="#16A3FA"
-        app:secondColor="#D20F02"
-        app:speed="10"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>-->
     <com.aserbao.aserbaoanimationsummart.canvasAndPaint.MyView
         android:id="@+id/my_view"
         android:layout_alignParentBottom="true"
@@ -40,4 +31,13 @@
         android:layout_below="@+id/btn_draw"
         android:layout_width="50dp"
         android:layout_height="80dp"/>
+    <com.aserbao.aserbaoanimationsummart.canvasAndPaint.RectFProgresss
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:timeFinish="12"
+        app:showColor="@color/black"
+        app:sleepTime="50"
+        />
 </RelativeLayout>
