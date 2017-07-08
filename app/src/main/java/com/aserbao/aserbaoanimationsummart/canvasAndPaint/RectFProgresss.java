@@ -25,8 +25,8 @@ public class RectFProgresss extends View {
     private int mTime = 12;
     private int mShowColor = Color.YELLOW;
     private int mNumProgress = 0;
-    private int mNumProgressCount = (mTime * 1000) / 50 ;
     private int sleepTime = 50;
+    private int mNumProgressCount = (mTime * 1000) / sleepTime ;
     private int m2whCount;
     private int mCurrProgress;
     private int mwhCount;
