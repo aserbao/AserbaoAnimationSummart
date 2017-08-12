@@ -22,4 +22,8 @@ public class UISummaryActivity extends AppCompatActivity {
     public void btn_recycler_view(View view) {
         startActivity(new Intent(this,RecyclerViewSummary.class));
     }
+
+    public void btn_custom(View view) {
+        startActivity(new Intent(this,CustomViewGroupActivity.class));
+    }
 }

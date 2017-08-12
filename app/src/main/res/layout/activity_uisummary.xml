@@ -21,4 +21,13 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/btn_edit_text"
         android:layout_toEndOf="@+id/btn_edit_text"/>
+    <Button
+        android:onClick="btn_custom"
+        android:id="@+id/btn_custom"
+        android:text="自定义ViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_recycler_view"
+        android:layout_toEndOf="@+id/btn_recycler_view"/>
 </RelativeLayout>

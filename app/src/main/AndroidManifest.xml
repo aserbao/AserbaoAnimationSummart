@@ -75,6 +75,8 @@
         </activity>
         <activity android:name=".activitys.RecyclerViewSummary">
         </activity>
+        <activity android:name=".activitys.CustomViewGroupActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,152 @@
+package com.maoshang.koudaibo.gles;
+
+import android.content.Context;
+import android.os.Build;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.SystemClock;
+
+import com.faceunity.wrapper.faceunity;
+import com.netease.nimlib.sdk.avchat.model.AVChatVideoFrame;
+import com.netease.nrtc.effect.utils.ThreadUtils;
+import com.pobing.common.util.Logger;
+import com.pobing.common.view.CustomedToast;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.concurrent.Callable;
+import java.util.concurrent.CountDownLatch;
+
+/**
+ * 滤镜管理工具类
+ * 所有滤镜相关 Api 在同一线程中调用
+ * Created by Yi on 2017/5/5.
+ */
+
+public class FaceUnityManager {
+    private static final String TAG = FaceUnityManager.class.getSimpleName();
+    private final Object mHandlerLock = new Object();
+    private Handler mHandler;
+
+    /**
+     * 滤镜参数相关
+     */
+    private int mFacebeautyItem = 0;//美颜参数设置
+    private String mEffectFileName = EffectFilterName.EFFECT_ITEM_FILE_NAME[7];//贴纸显示
+    private int mEffectItem = 0;
+    String mFilterName = EffectFilterName.FILTERS_NAME[0];//滤镜风格
+    float mFacebeautyColorLevel = 1.1f;
+    float mFacebeautyBlurLevel = 6.0f;
+    float mFacebeautyCheeckThin = 1.2f;
+    float mFacebeautyEnlargeEye = 1.1f;
+
+    public static FaceUnityManager create(final Context context) {
+        final HandlerThread thread = new HandlerThread("face_unity_thread");
+        thread.start();
+        final Handler handler = new Handler(thread.getLooper());
+        return ThreadUtils.invokeAtFrontUninterruptibly(handler, new Callable<FaceUnityManager>() {
+            @Override
+            public FaceUnityManager call() throws Exception {
+                return new FaceUnityManager(context, handler);
+            }
+        });
+    }
+
+    private FaceUnityManager(Context context, Handler handler) {
+        synchronized (mHandlerLock) {
+            // TODO 初始化 api
+            Logger.e(TAG, "init face unity thread ->" + Thread.currentThread().getName());
+            mHandler = handler;
+            faceunity.fuCreateEGLContext();
+            try {
+                //环境初始化
+                InputStream is = context.getAssets().open("v3.mp3");
+                byte[] v3data = new byte[is.available()];
+                is.read(v3data);
+                is.close();
+                faceunity.fuSetup(v3data, null, authpack.A());
+                faceunity.fuSetMaxFaces(1);
+                //美颜加载
+                is = context.getAssets().open("face_beautification.mp3");
+                byte[] itemData = new byte[is.available()];
+                is.read(itemData);
+                is.close();
+                mFacebeautyItem = faceunity.fuCreateItemFromPackage(itemData);
+                //道具加载
+                is = context.getAssets().open(mEffectFileName);//加载贴纸
+                itemData = new byte[is.available()];
+                is.read(itemData);
+                is.close();
+                mEffectItem = faceunity.fuCreateItemFromPackage(itemData);
+            } catch (IOException e) {
+                e.printStackTrace();
+                Logger.e(TAG, "IOException");
+                return;
+            }
+            //设置道具
+            faceunity.fuItemSetParam(mEffectItem, "isAndroid", 1.0);
+            //设置美颜参数
+            faceunity.fuItemSetParam(mFacebeautyItem, "color_level", mFacebeautyColorLevel);//美白效果 1以上为增强
+            faceunity.fuItemSetParam(mFacebeautyItem, "blur_level", mFacebeautyBlurLevel);//磨皮 取值范围 0-6
+            faceunity.fuItemSetParam(mFacebeautyItem, "filter_name", mFilterName);//滤镜风格 默认 nature
+            faceunity.fuItemSetParam(mFacebeautyItem, "cheek_thinning", mFacebeautyCheeckThin);//瘦脸
+            faceunity.fuItemSetParam(mFacebeautyItem, "eye_enlarging", mFacebeautyEnlargeEye);//大眼
+        }
+    }
+
+    private boolean postFaceUnityThread(Runnable runnable) {
+        synchronized (mHandlerLock) {
+            return mHandler != null
+                    && mHandler.postAtTime(
+                    runnable, this, SystemClock.uptimeMillis());
+        }
+    }
+
+    public void destroyItem() {
+        postFaceUnityThread(new Runnable() {
+            @Override
+            public void run() {
+                // TODO 销毁滤镜实例
+                Logger.e(TAG, "destroyItem currentThread -> " + Thread.currentThread().getName());
+                faceunity.fuDestroyItem(mEffectItem);
+                mEffectItem = 0;
+                faceunity.fuDestroyItem(mFacebeautyItem);
+                mFacebeautyItem = 0;
+                faceunity.fuOnDeviceLost();
+//                faceunity.fuDestroyAllItems();
+                CustomedToast.info("销毁滤镜实例");
+            }
+        });
+
+        synchronized (mHandlerLock) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
+                mHandler.getLooper().quitSafely();
+            } else {
+                mHandler.getLooper().quit();
+            }
+            mHandler = null;
+        }
+    }
+
+    public boolean apply(final AVChatVideoFrame avChatVideoFrame) {
+        final CountDownLatch barrier = new CountDownLatch(1);
+        final boolean didPost = postFaceUnityThread(new Runnable() {
+            @Override
+            public void run() {
+                //TODO 视频滤镜处理
+                Logger.e(TAG, "apply  -> " + Thread.currentThread().getName());
+                faceunity.fuRenderToNV21Image(avChatVideoFrame.data.array(),
+                        avChatVideoFrame.height,
+                        avChatVideoFrame.width,
+                        0,
+                        new int[]{mEffectItem, mFacebeautyItem});
+                barrier.countDown();
+            }
+        });
+        if (didPost) {
+            ThreadUtils.awaitUninterruptibly(barrier);
+            return true;
+        }
+        return false;
+    }
+}

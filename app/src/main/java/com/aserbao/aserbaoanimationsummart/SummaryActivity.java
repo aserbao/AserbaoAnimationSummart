@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.aserbao.aserbaoanimationsummart.activitys.TouchBaseActivity;
 import com.aserbao.aserbaoanimationsummart.activitys.UISummaryActivity;
 import com.aserbao.aserbaoanimationsummart.media.MediaActivity;
+import com.aserbao.aserbaolibrary.activity.AserbaoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
