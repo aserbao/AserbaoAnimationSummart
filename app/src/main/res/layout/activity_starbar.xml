@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:fitsSystemWindows="true"
+    tools:context="com.aserbao.aserbaoanimationsummart.activitys.StarbarActivity">
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/setColor"
+            style="@style/rb_style"
+            android:text="StatusBarUtil.setColor"
+           />
+        <RadioButton
+            android:id="@+id/setColorForSwipeBack"
+            style="@style/rb_style"
+            android:text="StatusBarUtil.setColorForSwipeBack"
+            />
+        <RadioButton
+            android:id="@+id/setTranslucent"
+            style="@style/rb_style"
+            android:text="StatusBarUtil.setTranslucent"
+            />
+        <RadioButton
+            android:id="@+id/setTranslucentForImageView"
+            style="@style/rb_style"
+            android:text="setTranslucentForImageView"
+            />
+
+    </RadioGroup>
+    <SeekBar
+        android:layout_centerVertical="true"
+        android:max="255"
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"/>
+</RelativeLayout>

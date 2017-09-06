@@ -77,6 +77,11 @@
         </activity>
         <activity android:name=".activitys.CustomViewGroupActivity">
         </activity>
+        <!--修改状态栏颜色-->
+        <!--android:theme="@style/ImageTranslucentTheme"-->
+        <activity android:name=".activitys.StarbarActivity"
+            >
+        </activity>
     </application>
 
 </manifest>

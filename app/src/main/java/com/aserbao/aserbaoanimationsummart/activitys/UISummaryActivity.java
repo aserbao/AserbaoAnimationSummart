@@ -26,4 +26,8 @@ public class UISummaryActivity extends AppCompatActivity {
     public void btn_custom(View view) {
         startActivity(new Intent(this,CustomViewGroupActivity.class));
     }
+
+    public void btn_star_color(View view) {
+        startActivity(new Intent(this,StarbarActivity.class));
+    }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item> <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/red</item>
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/red</item>
+        <!--页面背景色-->
+        <item name="android:windowBackground">@color/gray</item>
+        <!--api 21 可用 底部导航栏颜色-->
+        <!--api 21 可用 Appbar背景色-->
+        <item name="android:colorPrimary">@color/blue</item>
+        <!--ToolBar上的Title颜色-->
+        <item name="android:textColorPrimary">@color/yellow</item>
+        <!--api 21 可用 各个控制控件的默认颜色-->
+        <item name="android:colorControlNormal">@color/gold</item>
+    </style>
+</resources>
