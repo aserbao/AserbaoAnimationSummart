@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:background="@drawable/custom_progerss_bg"
+              android:layout_width="200dp"
+              android:layout_height="100dp">
+            <ProgressBar
+                android:id="@+id/custom_pb_one"
+                android:indeterminateDrawable="@drawable/drawable_progress"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:id="@+id/custom_pb_two"
+                android:indeterminateDrawable="@drawable/drawable_progress_two"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+</FrameLayout>

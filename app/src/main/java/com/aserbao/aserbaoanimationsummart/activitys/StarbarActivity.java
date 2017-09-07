@@ -46,6 +46,7 @@ public class StarbarActivity extends AppCompatActivity implements SeekBar.OnSeek
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);*/
 //                window.setStatusBarColor(Color.TRANSPARENT);
                 //底部导航栏
+                StatusBarUtil.setTranslucentForImageView(this, 0, mRg);
                 window.setNavigationBarColor(Color.BLACK);
             }
         } catch (Exception e) {
