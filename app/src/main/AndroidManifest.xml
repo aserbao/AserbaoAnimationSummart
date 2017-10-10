@@ -77,10 +77,17 @@
         </activity>
         <activity android:name=".activitys.CustomViewGroupActivity">
         </activity>
-        <!--修改状态栏颜色-->
-        <!--android:theme="@style/ImageTranslucentTheme"-->
-        <activity android:name=".activitys.StarbarActivity"
-            >
+        <!-- 修改状态栏颜色 -->
+        <!-- android:theme="@style/ImageTranslucentTheme" -->
+        <activity android:name=".activitys.StarbarActivity">
+        </activity>
+        <activity android:name=".activitys.LayoutActivity">
+        </activity>
+        <activity android:name=".classify.ClassifyActivity">
+        </activity>
+        <activity android:name=".classify.logic.LogicActivity">
+        </activity>
+        <activity android:name=".classify.logic.rxJava.RxJavaActivity">
         </activity>
     </application>
 

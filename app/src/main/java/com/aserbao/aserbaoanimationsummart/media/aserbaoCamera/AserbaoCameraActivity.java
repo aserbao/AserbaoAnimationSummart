@@ -26,7 +26,6 @@ import android.view.TextureView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.aserbao.aserbaoanimationsummart.MainActivity;
 import com.aserbao.aserbaoanimationsummart.R;
 
 import java.io.File;

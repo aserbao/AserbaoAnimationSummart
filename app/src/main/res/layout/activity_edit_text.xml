@@ -7,14 +7,15 @@
     android:layout_height="match_parent"
     tools:context="com.aserbao.aserbaoanimationsummart.activitys.EditTextActivity">
     <EditText
+        android:id="@+id/edit_text"
         android:maxHeight="72dip"
         android:maxLines="4"
+        android:maxLength="6"
         android:textSize="16sp"
         android:autoLink="email|phone|web"
         android:inputType="text"
         android:singleLine="true"
         android:imeOptions="actionSend"
-        android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </RelativeLayout>

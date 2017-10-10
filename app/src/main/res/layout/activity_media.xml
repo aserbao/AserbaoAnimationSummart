@@ -62,5 +62,10 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/btn_media_record"
             android:layout_toEndOf="@+id/btn_media_record"/>
+        <Button
+            android:onClick="btn_compound"
+            android:text="视频拼接"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </RelativeLayout>
 </LinearLayout>

@@ -36,9 +36,22 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/listener"
         android:layout_toEndOf="@+id/listener"/>
-    <com.aserbao.aserbaoanimationsummart.aCustom.CustomProgressView
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+    <Button
+        android:id="@+id/layout"
+        android:text="布局框架"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_animation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/classify"
+        android:textAllCaps="false"
+        android:text="classify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_media"
+        android:layout_toRightOf="@+id/layout"
+        android:layout_toEndOf="@+id/layout"/>
 </RelativeLayout>

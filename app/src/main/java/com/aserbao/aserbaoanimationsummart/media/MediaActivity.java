@@ -11,6 +11,7 @@ import com.aserbao.aserbaoanimationsummart.media.camera.CameraActivity;
 import com.aserbao.aserbaoanimationsummart.media.camera2.Camera2Activity;
 import com.aserbao.aserbaoanimationsummart.media.record.RecordActivity;
 import com.aserbao.aserbaoanimationsummart.media.record.VideoRecordActivity;
+import com.aserbao.aserbaolibrary.activity.Mp4Activity;
 
 public class MediaActivity extends AppCompatActivity {
 
@@ -42,5 +43,9 @@ public class MediaActivity extends AppCompatActivity {
 
     public void btn_fu_media_record(View view) {
 
+    }
+
+    public void btn_compound(View view) {
+        startActivity(new Intent(this, Mp4Activity.class));
     }
 }

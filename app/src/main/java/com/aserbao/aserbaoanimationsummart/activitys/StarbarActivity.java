@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 
 import com.aserbao.aserbaoanimationsummart.R;
-import com.jaeger.library.StatusBarUtil;
+import com.aserbao.aserbaoutils.window.AStatusBarUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -46,8 +46,8 @@ public class StarbarActivity extends AppCompatActivity implements SeekBar.OnSeek
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);*/
 //                window.setStatusBarColor(Color.TRANSPARENT);
                 //底部导航栏
-                StatusBarUtil.setTranslucentForImageView(this, 0, mRg);
-                window.setNavigationBarColor(Color.BLACK);
+                AStatusBarUtil.setTranslucentForImageView(this, 0, mRg);
+//                window.setNavigationBarColor(Color.BLACK);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -57,16 +57,16 @@ public class StarbarActivity extends AppCompatActivity implements SeekBar.OnSeek
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         switch (mSel) {
             case SET_COLOR:
-                StatusBarUtil.setColor(StarbarActivity.this, Color.WHITE, seekBar.getProgress());
+                AStatusBarUtil.setColor(StarbarActivity.this, Color.WHITE, seekBar.getProgress());
                 break;
             case SETCOLORFORSWIPEBACK:
-                StatusBarUtil.setColorForSwipeBack(this, Color.WHITE, seekBar.getProgress());
+                AStatusBarUtil.setColorForSwipeBack(this, Color.WHITE, seekBar.getProgress());
                 break;
             case SETTRANSLUCENT:
-                StatusBarUtil.setTranslucent(this, seekBar.getProgress());
+                AStatusBarUtil.setTranslucent(this, seekBar.getProgress());
                 break;
             case SETTRANSLUCENTFORIMAGEVIEW:
-                StatusBarUtil.setTranslucentForImageView(this, seekBar.getProgress(), mRg);
+                AStatusBarUtil.setTranslucentForImageView(this, seekBar.getProgress(), mRg);
                 break;
         }
     }
