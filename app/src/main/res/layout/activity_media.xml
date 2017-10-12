@@ -1,52 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.aserbao.aserbaoanimationsummart.media.MediaActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout2">
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btn_camera"
+                android:text="1号照相机"/>
+
+            <Button
+                android:id="@+id/btn_camera2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_camera"
+                android:layout_toRightOf="@+id/btn_camera"
+                android:onClick="btn_camera2"
+                android:text="2号照相机"/>
+
+            <Button
+                android:id="@+id/btn_aserbao_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btn_aserbao_camera"
+                android:text="自做照相机"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_camera2"
+                android:layout_toEndOf="@+id/btn_camera2"/>
+
+            <Button
+                android:id="@+id/video_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_aserbao_camera"
+                android:layout_toRightOf="@+id/btn_aserbao_camera"
+                android:onClick="btn_video_record"
+                android:text="自做录像机"/>
+        </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/btn_camera"
-            android:onClick="btn_camera"
-            android:text="1号照相机"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/btn_camera2"
-            android:onClick="btn_camera2"
-            android:text="2号照相机"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/btn_camera"
-            android:layout_toEndOf="@+id/btn_camera"/>
-        <Button
-            android:id="@+id/btn_aserbao_camera"
-            android:onClick="btn_aserbao_camera"
-            android:text="自做照相机"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/btn_camera2"
-            android:layout_toEndOf="@+id/btn_camera2"/>
-        <Button
-            android:id="@+id/video_record"
-            android:onClick="btn_video_record"
-            android:text="自做录像机"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/btn_aserbao_camera"
-            android:layout_toEndOf="@+id/btn_aserbao_camera"/>
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
         <Button
             android:id="@+id/btn_media_record"
             android:onClick="btn_media_record"
@@ -67,5 +80,16 @@
             android:text="视频拼接"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
     </RelativeLayout>
-</LinearLayout>
+    <Button
+        android:onClick="go_camera"
+        android:textAllCaps="false"
+        android:text="camera1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp"/>
+</RelativeLayout>

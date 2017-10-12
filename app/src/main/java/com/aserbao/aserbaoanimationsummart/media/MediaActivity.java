@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.media.aserbaoCamera.AserbaoCameraActivity;
+import com.aserbao.aserbaoanimationsummart.media.aserbao.GoCameraActivity;
 import com.aserbao.aserbaoanimationsummart.media.camera.CameraActivity;
 import com.aserbao.aserbaoanimationsummart.media.camera2.Camera2Activity;
 import com.aserbao.aserbaoanimationsummart.media.record.RecordActivity;
@@ -47,5 +48,9 @@ public class MediaActivity extends AppCompatActivity {
 
     public void btn_compound(View view) {
         startActivity(new Intent(this, Mp4Activity.class));
+    }
+
+    public void go_camera(View view) {
+        startActivity(new Intent(this, GoCameraActivity.class));
     }
 }

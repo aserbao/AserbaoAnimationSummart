@@ -21,7 +21,6 @@ public class AutoFitTextureView extends TextureView {
         mRatioHeight = height;
         requestLayout();
     }
-
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
