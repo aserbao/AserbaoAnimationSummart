@@ -11,5 +11,14 @@
         android:textAllCaps="false"
         android:onClick="btn_logic"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"/>
+    <Button
+        android:onClick="btn_module"
+        android:text="四大组件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7"/>
 </RelativeLayout>

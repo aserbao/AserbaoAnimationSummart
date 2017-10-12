@@ -89,6 +89,12 @@
         </activity>
         <activity android:name=".classify.logic.rxJava.RxJavaActivity">
         </activity>
+        <activity android:name=".classify.module.ModuleActivity">
+        </activity>
+        <activity android:name=".classify.module.activity.LauncherActivity"
+            android:launchMode="singleInstance"
+            >
+        </activity>
     </application>
 
 </manifest>

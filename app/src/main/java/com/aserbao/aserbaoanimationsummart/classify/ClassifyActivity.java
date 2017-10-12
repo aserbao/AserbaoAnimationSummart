@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.logic.LogicActivity;
+import com.aserbao.aserbaoanimationsummart.classify.module.ModuleActivity;
 
 public class ClassifyActivity extends AppCompatActivity {
 
@@ -16,7 +17,12 @@ public class ClassifyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_classify);
     }
 
+
     public void btn_logic(View view) {
         startActivity(new Intent(this, LogicActivity.class));
+    }
+
+    public void btn_module(View view) {
+        startActivity(new Intent(this, ModuleActivity.class));
     }
 }

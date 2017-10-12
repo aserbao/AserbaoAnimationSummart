@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
+import com.aserbao.aserbaoanimationsummart.classify.ClassifyActivity;
 
 public class UISummaryActivity extends AppCompatActivity {
 
@@ -30,4 +31,5 @@ public class UISummaryActivity extends AppCompatActivity {
     public void btn_star_color(View view) {
         startActivity(new Intent(this,StarbarActivity.class));
     }
+
 }
