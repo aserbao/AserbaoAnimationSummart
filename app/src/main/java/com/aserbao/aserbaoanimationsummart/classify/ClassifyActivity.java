@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
+import com.aserbao.aserbaoanimationsummart.classify.annotations.AnnationActivity;
 import com.aserbao.aserbaoanimationsummart.classify.logic.LogicActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ModuleActivity;
 
@@ -24,5 +25,9 @@ public class ClassifyActivity extends AppCompatActivity {
 
     public void btn_module(View view) {
         startActivity(new Intent(this, ModuleActivity.class));
+    }
+
+    public void btn_annotation(View view) {
+        startActivity(new Intent(this, AnnationActivity.class));
     }
 }
