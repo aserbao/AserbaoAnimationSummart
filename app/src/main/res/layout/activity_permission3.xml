@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aserbao.aserbaoanimationsummart.classify.permission.PermissionActivity">
+    <Button
+        android:onClick="btn_permission_one"
+        android:text="第一个案列"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button12"/>
+    <Button
+        android:onClick="btn_permission_two"
+        android:text="第二个案列"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button12"
+        android:layout_toEndOf="@+id/button12"/>
+</RelativeLayout>

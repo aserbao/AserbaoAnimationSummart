@@ -20,7 +20,6 @@ public class Dynamic1Activity extends AppCompatActivity {
     public void btn_dynamic1_result(View view) {
         RealSubject realSubject = new RealSubject();
         InvocationHandler invocationHandler = new DynamicSubject(realSubject);
-
         Class<? extends RealSubject> aClass = realSubject.getClass();
         Subject subject = (Subject) Proxy.newProxyInstance(aClass.getClassLoader(), aClass.getInterfaces(), invocationHandler);
         subject.request();

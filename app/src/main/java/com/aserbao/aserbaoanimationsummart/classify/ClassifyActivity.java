@@ -10,6 +10,7 @@ import com.aserbao.aserbaoanimationsummart.classify.annotations.AnnotationActivi
 import com.aserbao.aserbaoanimationsummart.classify.dynamicproxy.DynamicActivity;
 import com.aserbao.aserbaoanimationsummart.classify.logic.LogicActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ModuleActivity;
+import com.aserbao.aserbaoanimationsummart.classify.permission.PermissionActivity;
 
 public class ClassifyActivity extends AppCompatActivity {
 
@@ -34,5 +35,9 @@ public class ClassifyActivity extends AppCompatActivity {
 
     public void btn_dynamic(View view) {
         startActivity(new Intent(this, DynamicActivity.class));
+    }
+
+    public void btn_permission(View view) {
+        startActivity(new Intent(this, PermissionActivity.class));
     }
 }
