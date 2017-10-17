@@ -111,6 +111,10 @@
         </activity>
         <activity android:name=".classify.annotations.AnnotationActivity">
         </activity>
+        <activity android:name=".classify.dynamicproxy.DynamicActivity">
+        </activity>
+        <activity android:name=".classify.dynamicproxy.Demo1.Dynamic1Activity">
+        </activity>
     </application>
 
 </manifest>

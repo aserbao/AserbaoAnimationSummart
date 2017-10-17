@@ -29,5 +29,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/button8"
-        android:layout_toEndOf="@+id/button8"/>
+        android:layout_toEndOf="@+id/button8"
+        android:id="@+id/button10"/>
+    <Button
+        android:onClick="btn_dynamic"
+        android:text="动态代理"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button10"
+        android:layout_toEndOf="@+id/button10"/>
 </RelativeLayout>
