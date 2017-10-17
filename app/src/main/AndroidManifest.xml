@@ -107,6 +107,10 @@
             android:name=".classify.annotations.AnnationActivity"
             android:label="@string/title_activity_annation">
         </activity>
+        <activity android:name=".classify.annotations.demo2.Annotation2Activity">
+        </activity>
+        <activity android:name=".classify.annotations.AnnotationActivity">
+        </activity>
     </application>
 
 </manifest>
