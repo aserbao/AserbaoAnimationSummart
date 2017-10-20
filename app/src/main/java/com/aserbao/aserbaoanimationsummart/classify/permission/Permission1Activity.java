@@ -28,8 +28,6 @@ public class Permission1Activity extends AppCompatActivity {
         requestPermissions();
     }
 
-
-
     private final String[] BASIC_PERMISSIONS = new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE,

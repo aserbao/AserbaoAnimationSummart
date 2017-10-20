@@ -36,6 +36,7 @@ public class Camera2Fragment extends Fragment implements View.OnClickListener{
     private HandlerThread mBackgroundThread;
     private Handler mBackgroundHandler;
 
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -64,7 +65,9 @@ public class Camera2Fragment extends Fragment implements View.OnClickListener{
 //            mTextureView.setSurfaceTextureListener(mSurfaceTextureListener);
         }
     }
-
+    public static Camera2Fragment newInstance(){
+        return new Camera2Fragment();
+    }
     @Override
     public void onClick(View v) {
 

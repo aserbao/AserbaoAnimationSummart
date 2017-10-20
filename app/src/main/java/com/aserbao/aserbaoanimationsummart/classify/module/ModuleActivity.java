@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.module.activity.LauncherActivity;
+import com.aserbao.aserbaoanimationsummart.classify.module.fragments.FragmentActivity;
 
 public class ModuleActivity extends AppCompatActivity {
 
@@ -21,4 +22,7 @@ public class ModuleActivity extends AppCompatActivity {
         startActivity(new Intent(this, LauncherActivity.class));
     }
 
+    public void btn_fragment(View view) {
+        startActivity(new Intent(this, FragmentActivity.class));
+    }
 }

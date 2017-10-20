@@ -143,6 +143,8 @@
         </activity>
         <activity android:name=".classify.permission.PermissionActivity">
         </activity>
+        <activity android:name=".classify.module.fragments.FragmentActivity">
+        </activity>
     </application>
 
 </manifest>
