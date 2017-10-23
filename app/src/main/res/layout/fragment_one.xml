@@ -6,12 +6,18 @@
               android:orientation="vertical"
              tools:context="com.aserbao.aserbaoanimationsummart.classify.module.fragments.OneFragment">
     <Button
+        android:textAllCaps="false"
+        android:text="OneFragment"
         android:id="@+id/btn_add_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <fragment
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<fragment
         android:id="@+id/two_fragment"
         android:name="com.aserbao.aserbaoanimationsummart.classify.module.fragments.TwoFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"/>-->
 </LinearLayout>

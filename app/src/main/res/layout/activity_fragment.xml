@@ -8,6 +8,8 @@
     android:orientation="vertical"
     tools:context="com.aserbao.aserbaoanimationsummart.classify.module.fragments.FragmentActivity">
     <Button
+        android:textAllCaps="false"
+        android:text="activity"
         android:id="@+id/btn_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

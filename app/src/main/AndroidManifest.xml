@@ -145,6 +145,10 @@
         </activity>
         <activity android:name=".classify.module.fragments.FragmentActivity">
         </activity>
+        <activity android:name=".classify.module.ui.recyclerview.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".classify.module.ui.UIActivity">
+        </activity>
     </application>
 
 </manifest>

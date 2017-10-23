@@ -37,7 +37,7 @@ dependencies {
     //    compile 'com.jaeger.statusbarutil:library:1.4.0'
     compile project(':aserbaoutils')
     /*compile 'io.reactivex.rxjava2:rxjava:2.1.5'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'*/
+            compile 'io.reactivex.rxjava2:rxandroid:2.0.1'*/
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.4.0'

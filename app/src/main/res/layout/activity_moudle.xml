@@ -21,5 +21,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/button13"
-        android:layout_toEndOf="@+id/button13"/>
+        android:layout_toEndOf="@+id/button13"
+        android:id="@+id/button14"/>
+    <Button
+        android:onClick="btn_ui"
+        android:text="ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button14"
+        android:layout_toEndOf="@+id/button14"/>
 </RelativeLayout>

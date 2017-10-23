@@ -57,7 +57,7 @@ public class OneFragment extends Fragment {
     public void onViewClicked() {
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         TwoFragment fragment = new TwoFragment();
-        fragmentTransaction.add(R.id.fragment_one_container, fragment);
+        fragmentTransaction.add(R.id.fragment_container, fragment);
         fragmentTransaction.commit();
     }
 }

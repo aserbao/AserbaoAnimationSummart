@@ -39,4 +39,20 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
+
+    <declare-styleable name="CardView">
+        <attr format="color" name="cardBackgroundColor"/>
+        <attr format="dimension" name="cardCornerRadius"/>
+        <attr format="dimension" name="cardElevation"/>
+        <attr format="dimension" name="cardMaxElevation"/>
+        <attr format="boolean" name="cardUseCompatPadding"/>
+        <attr format="boolean" name="cardPreventCornerOverlap"/>
+        <attr format="dimension" name="contentPadding"/>
+        <attr format="dimension" name="contentPaddingLeft"/>
+        <attr format="dimension" name="contentPaddingRight"/>
+        <attr format="dimension" name="contentPaddingTop"/>
+        <attr format="dimension" name="contentPaddingBottom"/>
+        <attr name="android:minWidth"/>
+        <attr name="android:minHeight"/>
+    </declare-styleable>
 </resources>
