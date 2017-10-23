@@ -1,1 +1,1 @@
-include ':app', ':giftlibrary', ':face-unity', ':cameraLibrary', ':aserbaolibrary', ':aserbaoutils'
+include ':app', ':giftlibrary', ':face-unity', ':cameraLibrary', ':aserbaolibrary', ':aserbaoutils', ':library'

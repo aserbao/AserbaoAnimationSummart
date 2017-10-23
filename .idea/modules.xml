@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/cameraLibrary/cameraLibrary.iml" filepath="$PROJECT_DIR$/cameraLibrary/cameraLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/face-unity/face-unity.iml" filepath="$PROJECT_DIR$/face-unity/face-unity.iml" />
       <module fileurl="file://$PROJECT_DIR$/giftlibrary/giftlibrary.iml" filepath="$PROJECT_DIR$/giftlibrary/giftlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>
