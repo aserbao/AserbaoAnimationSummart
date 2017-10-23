@@ -149,6 +149,8 @@
         </activity>
         <activity android:name=".classify.module.ui.UIActivity">
         </activity>
+        <activity android:name=".classify.module.ui.recyclerview.MultipleItemUserActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.aserbao.aserbaoanimationsummart.R;
+import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.adapters.AnimationAdapter;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.base.BaseQuickAdapter;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.entity.HomeItem;
 
@@ -19,7 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class RecyclerViewActivity extends AppCompatActivity {
-    private static final Class<?>[] ACTIVITY = {RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class};
+    private static final Class<?>[] ACTIVITY = {MultipleItemUserActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class};
     private static final String[] TITLE = {"Animation", "MultipleItem", "Header/Footer", "PullToRefresh", "Section", "EmptyView", "DragAndSwipe", "ItemClick", "ExpandableItem", "DataBinding", "UpFetchData"};
     private static final int[] IMG = {R.mipmap.deer,R.mipmap.beagledog,R.mipmap.ic_bg,R.mipmap.diamond2x,R.mipmap.deer,R.mipmap.beagledog,R.mipmap.ic_bg,R.mipmap.diamond2x,R.mipmap.deer,R.mipmap.beagledog,R.mipmap.ic_bg,R.mipmap.diamond2x};
 

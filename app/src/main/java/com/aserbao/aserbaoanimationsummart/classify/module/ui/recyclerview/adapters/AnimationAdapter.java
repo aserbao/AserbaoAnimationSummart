@@ -1,4 +1,4 @@
-package com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview;
+package com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.adapters;
 
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
@@ -24,6 +24,7 @@ public class AnimationAdapter extends BaseQuickAdapter<HomeItem,BaseViewHolder> 
 
     @Override
     protected void convert(BaseViewHolder helper, HomeItem item) {
-        helper.setText(R.id.text,item.getTitle());
+        helper.setText(R.id.text,item.getTitle())
+                .setImageResource(R.id.icon,item.getImageResource());
     }
 }
