@@ -10,5 +10,15 @@
         android:onClick="btn_simple"
         android:text="simple"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/button16"/>
+    <Button
+        android:textAllCaps="false"
+        android:onClick="btn_simple_custom"
+        android:text="simple_custom_behavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button16"
+        android:layout_toRightOf="@+id/button16"
+        android:layout_toEndOf="@+id/button16"/>
 </RelativeLayout>

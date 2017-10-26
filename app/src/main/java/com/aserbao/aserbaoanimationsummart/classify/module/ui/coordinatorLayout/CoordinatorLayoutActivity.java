@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout1Activity;
+import com.aserbao.aserbaoanimationsummart.classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout2Activity;
 
 public class CoordinatorLayoutActivity extends AppCompatActivity {
 
@@ -18,5 +19,9 @@ public class CoordinatorLayoutActivity extends AppCompatActivity {
 
     public void btn_simple(View view) {
         startActivity(new Intent(this, CoordinatorLayout1Activity.class));
+    }
+
+    public void btn_simple_custom(View view) {
+        startActivity(new Intent(this, CoordinatorLayout2Activity.class));
     }
 }
