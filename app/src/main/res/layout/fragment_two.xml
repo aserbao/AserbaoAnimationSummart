@@ -5,10 +5,9 @@
              tools:context="com.aserbao.aserbaoanimationsummart.classify.module.fragments.TwoFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:src="@drawable/help_bg"
-        android:scaleType="fitXY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/two_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </FrameLayout>
