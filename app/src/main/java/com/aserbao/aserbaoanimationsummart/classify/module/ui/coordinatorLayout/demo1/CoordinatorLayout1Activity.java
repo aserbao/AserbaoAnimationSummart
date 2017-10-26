@@ -17,6 +17,14 @@ import butterknife.ButterKnife;
 public class CoordinatorLayout1Activity extends AppCompatActivity {
 
 
+    @BindView(R.id.main_backdrop)
+    ImageView mMainBackdrop;
+    @BindView(R.id.main_toolbar)
+    Toolbar mMainToolbar;
+    @BindView(R.id.main_collapsing)
+    CollapsingToolbarLayout mMainCollapsing;
+    @BindView(R.id.main_appbar)
+    AppBarLayout mMainAppbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +35,10 @@ public class CoordinatorLayout1Activity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_coordinator_layout1);
         ButterKnife.bind(this);
+        initView();
+    }
+
+    private void initView() {
+        setSupportActionBar(mMainToolbar);
     }
 }
