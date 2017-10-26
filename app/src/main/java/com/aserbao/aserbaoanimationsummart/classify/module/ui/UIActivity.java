@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
+import com.aserbao.aserbaoanimationsummart.classify.module.ui.coordinatorLayout.CoordinatorLayoutActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.RecyclerViewActivity;
 
 public class UIActivity extends AppCompatActivity {
@@ -18,5 +19,9 @@ public class UIActivity extends AppCompatActivity {
 
     public void btn_recycler(View view) {
         startActivity(new Intent(this, RecyclerViewActivity.class));
+    }
+
+    public void btn_coordinatorLayout(View view) {
+        startActivity(new Intent(this, CoordinatorLayoutActivity.class));
     }
 }

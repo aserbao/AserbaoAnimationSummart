@@ -11,5 +11,15 @@
         android:textAllCaps="false"
         android:text="recycler_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/button15"/>
+    <Button
+        android:onClick="btn_coordinatorLayout"
+        android:textAllCaps="false"
+        android:text="CoordinatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button15"
+        android:layout_toEndOf="@+id/button15"/>
 </RelativeLayout>

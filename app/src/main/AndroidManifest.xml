@@ -49,11 +49,6 @@
         <activity
             android:name=".SummaryActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".MoveActivity"/>
         <activity android:name=".MoveScaleActivity"/>
@@ -150,6 +145,17 @@
         <activity android:name=".classify.module.ui.UIActivity">
         </activity>
         <activity android:name=".classify.module.ui.recyclerview.MultipleItemUserActivity">
+        </activity>
+        <activity android:name=".classify.module.ui.coordinatorLayout.CoordinatorLayoutActivity">
+        </activity>
+        <activity android:name=".classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout1Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
