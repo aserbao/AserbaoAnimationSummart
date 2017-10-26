@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/activity_main"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".classify.module.ui.scrollview.ScrollViewActivity">
+
+    <com.aserbao.aserbaoanimationsummart.classify.module.ui.scrollview.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/content" />
+
+            <include android:id="@+id/middlePanel"
+                     layout="@layout/middle_item_layout"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/content" />
+
+
+        </LinearLayout>
+
+    </com.aserbao.aserbaoanimationsummart.classify.module.ui.scrollview.ObservableScrollView>
+
+    <include android:id="@+id/topPanel"
+             layout="@layout/middle_item_layout"
+             android:visibility="gone"/>
+</FrameLayout>
