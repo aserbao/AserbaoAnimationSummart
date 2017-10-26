@@ -147,17 +147,22 @@
         <activity android:name=".classify.module.ui.recyclerview.MultipleItemUserActivity">
         </activity>
         <activity android:name=".classify.module.ui.coordinatorLayout.CoordinatorLayoutActivity">
-        </activity>
-        <activity
-            android:name=".classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout1Activity"
-            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout2Activity">
+        </activity>
+        <activity android:name=".classify.module.ui.coordinatorLayout.demo1.CoordinatorLayout3Activity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
     </application>
 

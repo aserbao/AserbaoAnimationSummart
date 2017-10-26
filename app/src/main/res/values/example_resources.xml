@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- colors -->
+    <color name="primary">#785447</color>
+    <color name="primaryDark">#5B3F36</color>
+
+    <!-- dimensions -->
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+
+    <!-- strings -->
+    <string name="quila_name">Quila</string>
+    <string name="quila_tagline">I love bones and slippers</string>
+    <string name="quila_name2">Quila!</string>
+
+</resources>

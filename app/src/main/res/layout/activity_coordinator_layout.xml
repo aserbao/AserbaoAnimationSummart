@@ -20,5 +20,15 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button16"
         android:layout_toRightOf="@+id/button16"
-        android:layout_toEndOf="@+id/button16"/>
+        android:layout_toEndOf="@+id/button16"
+        android:id="@+id/button17"/>
+    <Button
+        android:textAllCaps="false"
+        android:onClick="btn_demo3"
+        android:text="demo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button17"
+        android:layout_toEndOf="@+id/button17"/>
 </RelativeLayout>
