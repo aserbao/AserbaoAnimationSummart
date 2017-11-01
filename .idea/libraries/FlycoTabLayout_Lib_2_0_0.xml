@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="FlycoTabLayout_Lib-2.0.0">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/36971da2598a7a082b3794ca5d600a5f499169e3/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/36971da2598a7a082b3794ca5d600a5f499169e3/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ee38b98b70758c491e1b7fe1d49972873bc1f4eb/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ee38b98b70758c491e1b7fe1d49972873bc1f4eb/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

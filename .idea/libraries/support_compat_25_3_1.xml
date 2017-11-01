@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="support-compat-25.3.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/396e378d779ee71fad4845c8ae98828c7d94b57a/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/396e378d779ee71fad4845c8ae98828c7d94b57a/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/74e9938912afd3edb783c5c48ee59e73a102c3ba/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/74e9938912afd3edb783c5c48ee59e73a102c3ba/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1-sources.jar!/" />
+      <root url="jar://D:/AndroidStudio/android-sdk/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

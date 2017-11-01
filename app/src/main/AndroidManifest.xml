@@ -105,6 +105,11 @@
         <activity android:name=".activitys.LayoutActivity">
         </activity>
         <activity android:name=".classify.ClassifyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name=".classify.logic.LogicActivity">
         </activity>
@@ -159,23 +164,21 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".classify.module.ui.scrollview.ScrollViewActivity">
-
         </activity>
         <activity android:name=".classify.screen.ScreenListenerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
-         <receiver android:name=".classify.screen.BootReceiver">
-                     <intent-filter >
-                         <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                     </intent-filter>
-                 </receiver>
-        <receiver android:name=".classify.screen.Screen">
 
+        <receiver android:name=".classify.screen.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
         </receiver>
+        <receiver android:name=".classify.screen.Screen">
+        </receiver>
+
+        <activity android:name=".classify.module.ui.timepicker.TimePickerActivity">
+        </activity>
     </application>
 
 </manifest>

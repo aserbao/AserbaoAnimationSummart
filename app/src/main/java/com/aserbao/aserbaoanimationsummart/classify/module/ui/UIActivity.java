@@ -9,6 +9,7 @@ import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.coordinatorLayout.CoordinatorLayoutActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.RecyclerViewActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.scrollview.ScrollViewActivity;
+import com.aserbao.aserbaoanimationsummart.classify.module.ui.timepicker.TimePickerActivity;
 
 public class UIActivity extends AppCompatActivity {
 
@@ -28,5 +29,9 @@ public class UIActivity extends AppCompatActivity {
 
     public void btn_scroll_view(View view) {
         startActivity(new Intent(this, ScrollViewActivity.class));
+    }
+
+    public void btn_time_picker(View view) {
+        startActivity(new Intent(this, TimePickerActivity.class));
     }
 }
