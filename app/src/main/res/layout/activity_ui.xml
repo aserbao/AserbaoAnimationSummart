@@ -31,7 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/button17"
-        android:layout_toEndOf="@+id/button17"/>
+        android:layout_toEndOf="@+id/button17"
+        android:id="@+id/button18"/>
     <Button
         android:onClick="btn_time_picker"
         android:textAllCaps="false"
@@ -41,4 +42,13 @@
         android:layout_below="@+id/button15"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
+    <Button
+        android:onClick="btn_smart_refresh_layout"
+        android:textAllCaps="false"
+        android:text="smart_refresh_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button15"
+        android:layout_toLeftOf="@+id/button18"
+        android:layout_toStartOf="@+id/button18"/>
 </RelativeLayout>

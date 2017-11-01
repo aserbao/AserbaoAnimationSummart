@@ -166,7 +166,6 @@
         <activity android:name=".classify.module.ui.scrollview.ScrollViewActivity">
         </activity>
         <activity android:name=".classify.screen.ScreenListenerActivity">
-
         </activity>
 
         <receiver android:name=".classify.screen.BootReceiver">
@@ -178,6 +177,8 @@
         </receiver>
 
         <activity android:name=".classify.module.ui.timepicker.TimePickerActivity">
+        </activity>
+        <activity android:name=".classify.module.ui.smartRefreshLayout.SmartRefreshLayoutActivity">
         </activity>
     </application>
 
