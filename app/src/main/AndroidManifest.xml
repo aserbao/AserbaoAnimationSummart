@@ -49,6 +49,11 @@
         <activity
             android:name=".SummaryActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name=".MoveActivity"/>
         <activity android:name=".MoveScaleActivity"/>
@@ -105,11 +110,6 @@
         <activity android:name=".activitys.LayoutActivity">
         </activity>
         <activity android:name=".classify.ClassifyActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".classify.logic.LogicActivity">
         </activity>
@@ -179,6 +179,8 @@
         <activity android:name=".classify.module.ui.timepicker.TimePickerActivity">
         </activity>
         <activity android:name=".classify.module.ui.smartRefreshLayout.SmartRefreshLayoutActivity">
+        </activity>
+        <activity android:name=".classify.module.ui.progressbar.ProgressBarActivity">
         </activity>
     </application>
 

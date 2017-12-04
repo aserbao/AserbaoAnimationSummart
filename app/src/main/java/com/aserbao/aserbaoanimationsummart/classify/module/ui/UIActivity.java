@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.coordinatorLayout.CoordinatorLayoutActivity;
+
+import com.aserbao.aserbaoanimationsummart.classify.module.ui.progressbar.ProgressBarActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.RecyclerViewActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.scrollview.ScrollViewActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.smartRefreshLayout
@@ -39,5 +41,9 @@ public class UIActivity extends AppCompatActivity {
 
     public void btn_smart_refresh_layout(View view) {
         startActivity(new Intent(this, SmartRefreshLayoutActivity.class));
+    }
+
+    public void btn_progress_bar(View view) {
+        startActivity(new Intent(this, ProgressBarActivity.class));
     }
 }

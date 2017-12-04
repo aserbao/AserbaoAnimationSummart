@@ -13,6 +13,7 @@ import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.adapters.AnimationAdapter;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.base.BaseQuickAdapter;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.entity.HomeItem;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 
 import java.util.ArrayList;
 
@@ -20,12 +21,25 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class RecyclerViewActivity extends AppCompatActivity {
-    private static final Class<?>[] ACTIVITY = {MultipleItemUserActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class,RecyclerViewActivity.class};
-    private static final String[] TITLE = {"Animation", "MultipleItem", "Header/Footer", "PullToRefresh", "Section", "EmptyView", "DragAndSwipe", "ItemClick", "ExpandableItem", "DataBinding", "UpFetchData"};
-    private static final int[] IMG = {R.mipmap.deer,R.mipmap.beagledog,R.mipmap.ic_bg,R.mipmap.diamond2x,R.mipmap.deer,R.mipmap.beagledog,R.mipmap.ic_bg,R.mipmap.diamond2x,R.mipmap.deer,R.mipmap.beagledog,R.mipmap.ic_bg,R.mipmap.diamond2x};
+
+    private static final String TAG = "RecyclerViewActivity";
+
+    private static final Class<?>[] ACTIVITY = {MultipleItemUserActivity.class,
+            RecyclerViewActivity.class, RecyclerViewActivity.class, RecyclerViewActivity.class,
+            RecyclerViewActivity.class, RecyclerViewActivity.class, RecyclerViewActivity.class,
+            RecyclerViewActivity.class, RecyclerViewActivity.class, RecyclerViewActivity.class,
+            RecyclerViewActivity.class};
+    private static final String[] TITLE = {"Animation", "MultipleItem", "Header/Footer",
+            "PullToRefresh", "Section", "EmptyView", "DragAndSwipe", "ItemClick",
+            "ExpandableItem", "DataBinding", "UpFetchData"};
+    private static final int[] IMG = {R.mipmap.deer, R.mipmap.beagledog, R.mipmap.ic_bg, R.mipmap
+            .diamond2x, R.mipmap.deer, R.mipmap.beagledog, R.mipmap.ic_bg, R.mipmap.diamond2x, R
+            .mipmap.deer, R.mipmap.beagledog, R.mipmap.ic_bg, R.mipmap.diamond2x};
 
     @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;
+    @BindView(R.id.smart_refresh_layout)
+    SmartRefreshLayout mSmartRefreshLayout;
 
     private ArrayList<HomeItem> mDataList;
 
@@ -36,6 +50,11 @@ public class RecyclerViewActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         initData();
         initView();
+        initRefresh();
+    }
+
+    private void initRefresh() {
+//        mSmartRefreshLayout.setEnableRefresh();
     }
 
     private void initData() {
@@ -51,16 +70,17 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     private void initView() {
         AnimationAdapter adapter = new AnimationAdapter(R.layout.home_item_view, mDataList);
-        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         adapter.openLoadAnimation(BaseQuickAdapter.SCALEIN);
-        View top = getLayoutInflater().inflate(R.layout.top_view, (ViewGroup) mRecyclerView.getParent(), false);
+        View top = getLayoutInflater().inflate(R.layout.top_view, (ViewGroup) mRecyclerView
+                .getParent(), false);
         adapter.addHeaderView(top);
         adapter.setOnLoadMoreListener(new BaseQuickAdapter.RequestLoadMoreListener() {
             @Override
             public void onLoadMoreRequested() {
                 Toast.makeText(RecyclerViewActivity.this, "加载更多成功", Toast.LENGTH_SHORT).show();
             }
-        },mRecyclerView);
+        }, mRecyclerView);
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {

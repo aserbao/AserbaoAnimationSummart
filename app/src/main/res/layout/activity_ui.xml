@@ -51,4 +51,9 @@
         android:layout_below="@+id/button15"
         android:layout_toLeftOf="@+id/button18"
         android:layout_toStartOf="@+id/button18"/>
+    <Button
+        android:onClick="btn_progress_bar"
+        android:text="progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
