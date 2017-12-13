@@ -30,5 +30,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/button14"
-        android:layout_toEndOf="@+id/button14"/>
+        android:layout_toEndOf="@+id/button14"
+        android:id="@+id/button19"/>
+    <Button
+        android:onClick="btn_source_code"
+        android:text="源码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button19"
+        android:layout_toEndOf="@+id/button19"/>
 </RelativeLayout>
