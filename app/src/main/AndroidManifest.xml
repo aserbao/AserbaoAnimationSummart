@@ -44,16 +44,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".MyApplication"
         android:theme="@style/AppTheme">
         <activity android:name=".activitys.MainActivity"/>
         <activity
             android:name=".SummaryActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".MoveActivity"/>
         <activity android:name=".MoveScaleActivity"/>
@@ -183,6 +184,11 @@
         <activity android:name=".classify.module.ui.progressbar.ProgressBarActivity">
         </activity>
         <activity android:name=".classify.module.soundCode.SoundCodeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 

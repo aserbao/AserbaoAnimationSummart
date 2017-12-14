@@ -1,5 +1,8 @@
 <component name="libraryTable">
   <library name="support-annotations-25.3.1">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$" />
+    </ANNOTATIONS>
     <CLASSES>
       <root url="jar://D:/AndroidStudio/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar!/" />
     </CLASSES>

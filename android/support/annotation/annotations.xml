@@ -1,0 +1,5 @@
+<root>
+    <item name='android.support.annotation.IntDef'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
