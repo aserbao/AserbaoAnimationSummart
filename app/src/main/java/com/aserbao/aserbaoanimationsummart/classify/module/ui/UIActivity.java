@@ -8,6 +8,8 @@ import android.view.View;
 import com.aserbao.aserbaoanimationsummart.R;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.coordinatorLayout.CoordinatorLayoutActivity;
 
+
+import com.aserbao.aserbaoanimationsummart.classify.module.ui.fragment.FragmentActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.progressbar.ProgressBarActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.recyclerview.RecyclerViewActivity;
 import com.aserbao.aserbaoanimationsummart.classify.module.ui.scrollview.ScrollViewActivity;
@@ -45,5 +47,9 @@ public class UIActivity extends AppCompatActivity {
 
     public void btn_progress_bar(View view) {
         startActivity(new Intent(this, ProgressBarActivity.class));
+    }
+
+    public void btn_fragment(View view) {
+        startActivity(new Intent(this, FragmentActivity.class));
     }
 }

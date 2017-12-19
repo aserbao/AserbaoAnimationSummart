@@ -41,7 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button15"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:id="@+id/button21"/>
     <Button
         android:onClick="btn_smart_refresh_layout"
         android:textAllCaps="false"
@@ -50,10 +51,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button15"
         android:layout_toLeftOf="@+id/button18"
-        android:layout_toStartOf="@+id/button18"/>
+        android:layout_toStartOf="@+id/button18"
+        android:id="@+id/button20"/>
     <Button
         android:onClick="btn_progress_bar"
         android:text="progressBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:onClick="btn_fragment"
+        android:text="fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button18"
+        android:layout_toRightOf="@+id/button20"
+        android:layout_toEndOf="@+id/button20"/>
 </RelativeLayout>
