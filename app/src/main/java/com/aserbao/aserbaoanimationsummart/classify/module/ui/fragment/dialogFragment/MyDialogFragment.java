@@ -71,6 +71,7 @@ public class MyDialogFragment extends DialogFragment {
             case 7:
             case 11:
             case 15:
+
                 theme = android.R.style.Theme_Holo_Light_Panel; break;
         }
         Toast.makeText(getActivity(), "Style===="+ String.valueOf(style) + "theme======"+String.valueOf(theme), Toast.LENGTH_SHORT).show();
